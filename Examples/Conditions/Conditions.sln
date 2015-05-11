@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conditions01", "01\Conditio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IfElseExample", "IfElseExample\IfElseExample.csproj", "{3CBFEAD9-BD8E-4D55-A49B-C727AE97EEB4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwitchExample", "SwitchExample\SwitchExample.csproj", "{B1E4AF37-9F73-43D7-9881-06127136A3CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwitchMenu", "SwitchMenu\SwitchMenu.csproj", "{F626D969-F1FA-4A55-8617-5DE513B5702D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{3CBFEAD9-BD8E-4D55-A49B-C727AE97EEB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CBFEAD9-BD8E-4D55-A49B-C727AE97EEB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CBFEAD9-BD8E-4D55-A49B-C727AE97EEB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1E4AF37-9F73-43D7-9881-06127136A3CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1E4AF37-9F73-43D7-9881-06127136A3CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1E4AF37-9F73-43D7-9881-06127136A3CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1E4AF37-9F73-43D7-9881-06127136A3CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F626D969-F1FA-4A55-8617-5DE513B5702D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F626D969-F1FA-4A55-8617-5DE513B5702D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F626D969-F1FA-4A55-8617-5DE513B5702D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F626D969-F1FA-4A55-8617-5DE513B5702D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
