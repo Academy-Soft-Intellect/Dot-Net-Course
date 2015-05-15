@@ -11,7 +11,7 @@ namespace SymetricArray
         static void Main(string[] args)
         {
             //int[] array = new int[] { 1, 2, 3, 2, 1 };
-            int[] array = new int[] { 1, 2, 3, 3, 2, 1 };
+            int[] array = new int[] { 1, 2, 3, 3, 2, 2 };
             bool isSymetric = true;
 
             //for (int i = 0; i < array.Length/2; i++)
@@ -29,6 +29,7 @@ namespace SymetricArray
                 if (array[i] != array[arrLength - i])
                 {
                     isSymetric = false;
+                    break;
                 }
             }
 
