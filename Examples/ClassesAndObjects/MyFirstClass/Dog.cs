@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyFirstClass
 {
-    class Dog
+    public class Dog
     {
         public static string Poroda = "Huskey";
 
@@ -16,19 +16,36 @@ namespace MyFirstClass
             get { return this.name; }
             set { this.name = value; }
         }
+
+        private string color;
+        public string Color
+        {
+            get { return color; }
+            set { color = value; }
+        }
+
+        private int age;
+        public int Age
+        {
+            get { return age; }
+            set { age = value; }
+        }
         
         public Dog()
         {
             this.name = "Unnamed";
+            this.color = "White";
+            this.age = 0;
         }
-        public Dog(string name)
+        public Dog(string newName)
         {
-            this.name = name;
+            this.name = newName;
         }
 
         public void SayBau()
         {
-            Console.WriteLine("Dog {0} said: BAUUUUU",name);
+            Console.WriteLine("Dog {0} said: BAUUUUU. {0} is {1} year old"
+                ,name, age);
         }
 
     }
