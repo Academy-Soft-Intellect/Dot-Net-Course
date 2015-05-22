@@ -10,8 +10,9 @@ namespace SystemClasses
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Math.PI);
-            Console.WriteLine(Math.E);
+            //Console.WriteLine(Math.PI);
+            //Console.WriteLine(Math.E);
+
 
             Random rand = new Random();
             for (int number = 1; number <= 6; number++)
