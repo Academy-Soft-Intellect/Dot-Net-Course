@@ -6,17 +6,15 @@ using System.Threading.Tasks;
 
 namespace AbstractionWithPolymorph
 {
-    public class Dog : Animal
+    public class Cat : Animal
     {
-        public Dog(string name) : base(name)
+        public Cat(string name) : base(name)
         {
             this.Name = name;
         }
-
-        protected override String GetTypicalSound()
+        protected override string GetTypicalSound()
         {
-            return "Bau! I am" +this.Name ;
+            return "Мяу! I am" + this.Name;
         }
-
     }
 }

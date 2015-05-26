@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Recursion")]
+[assembly: AssemblyTitle("GlobalParameter")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Recursion")]
+[assembly: AssemblyProduct("GlobalParameter")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("4c0e8b5b-6014-44d6-9b88-6f81baad1afb")]
+[assembly: Guid("e7db8b64-b187-432d-a04e-4cad0c43b107")]
 
 // Version information for an assembly consists of the following four values:
 //

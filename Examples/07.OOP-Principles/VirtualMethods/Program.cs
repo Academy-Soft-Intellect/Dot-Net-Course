@@ -10,14 +10,14 @@ namespace VirtualMethods
     {
         static void Main(string[] args)
         {
-            Lion lion = new Lion(true, 80);
+            Cat cat = new Cat(false);
+            cat.CatchPray(null);
+
+            Cat lion = new Lion(true, 80);
             lion.CatchPray(null);
 
             AfricanLion africanLion = new AfricanLion(true, 120);
             africanLion.CatchPray(null);
-
-            Lion lion2 = new AfricanLion(false, 60);
-            lion2.CatchPray(null);
         }
     }
 }

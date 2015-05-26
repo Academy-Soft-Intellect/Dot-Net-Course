@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Recursion")]
+[assembly: AssemblyTitle("Methods01")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Recursion")]
+[assembly: AssemblyProduct("Methods01")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("4c0e8b5b-6014-44d6-9b88-6f81baad1afb")]
+[assembly: Guid("54ed6fcd-b0a1-45d5-8b52-5969b724b0cd")]
 
 // Version information for an assembly consists of the following four values:
 //

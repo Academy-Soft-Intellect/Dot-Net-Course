@@ -10,8 +10,11 @@ namespace AbstractionWithPolymorph
     {
         static void Main(string[] args)
         {
-            Animal dog = new Dog();
+            Animal dog = new Dog("Goshko");
             dog.PrintInformation();
+
+            Animal cat = new Cat("Toshko");
+            cat.PrintInformation();
         }
     }
 }
