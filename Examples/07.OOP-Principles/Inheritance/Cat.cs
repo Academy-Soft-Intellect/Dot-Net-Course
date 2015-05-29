@@ -9,11 +9,6 @@ namespace Inheritance
     public class Cat
     {
         private bool male;
-        public Cat() : this(true) { }
-        public Cat(bool male)
-        {
-            this.male = male;
-        }
         public bool Male
         {
             get
@@ -26,5 +21,26 @@ namespace Inheritance
             }
         }
 
+        private string name;
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+        public Cat() : this("gosho") { }
+        public Cat(bool male)
+        {
+            this.male = male;
+        }
+        public Cat(string name)
+        {
+            this.name = name;
+        }
+
+        public Cat(bool male, string name)
+        {
+            this.male = male;
+            this.name = name;
+        }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VirtualMethods
 {
-    public abstract class Cat
+    public class Cat
     {
         private bool male;
         public Cat() : this(true) { }
@@ -26,6 +26,10 @@ namespace VirtualMethods
             }
         }
 
-        public abstract void CatchPray(object pray);
+        public virtual void CatchPray(object pray)
+        {
+            Console.WriteLine("Cat.CatchPray");
+        }
+
     }
 }

@@ -9,12 +9,6 @@ namespace Inheritance
     public class Lion : Cat, IEquatable<Lion>
     {
         private int weight;
-
-        public Lion(bool male, int weight)
-            : base(male)
-        {
-            this.weight = weight;
-        }
         public int Weight
         {
             get
@@ -26,6 +20,11 @@ namespace Inheritance
                 this.weight = value;
             }
         }
+        public Lion(bool male, int weight)
+            :base(male)
+        {
+            this.weight = weight;
+        }
 
         public bool Equals(Lion lion)
         {
@@ -36,6 +35,12 @@ namespace Inheritance
             }
             else
                 return false;
-        }
+        }
+
+        public override string ToString()
+        {
+            return string.Format("Male: {0}, weight: {1}", Male, Weight);
+        }
+
     }
 }
