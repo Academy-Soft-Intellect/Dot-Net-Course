@@ -1,18 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace String
+namespace Equals
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int a = 5;
-            Console.WriteLine(a.GetType());
+            string str1 = "aaa";
+            string str2 = "Aaa";
+
+            Console.WriteLine(str1.Equals(str2, StringComparison.InvariantCultureIgnoreCase));
         }
     }
 }
