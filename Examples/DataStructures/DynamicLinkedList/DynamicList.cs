@@ -47,7 +47,6 @@ namespace DynamicLinkedList
             this.count = 0;
         }
 
-
         public void Add(object item)
         {
             if (head == null)

@@ -14,7 +14,8 @@ namespace GenericListExample
             foreach (var item in primes)
             {
                 Console.WriteLine("{0} ", item);
-            }
+            }
+
         }
 
         public static List<int> GetPrimes(int start, int end)

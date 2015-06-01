@@ -8,6 +8,8 @@ namespace StaticArrayList
 {
     class CustomArrayList
     {
+        private static readonly int INITIAL_CAPACITY = 4;
+
         private object[] arr;
         private int count;
         public int Count
@@ -17,7 +19,6 @@ namespace StaticArrayList
                 return count;
             }
         }
-        private static readonly int INITIAL_CAPACITY = 4;
         public CustomArrayList()
         {
             arr = new object[INITIAL_CAPACITY];
