@@ -27,6 +27,11 @@ namespace BuilderPattern
             builder = new MotorCycleBuilder();
             shop.Construct(builder);
             builder.Vehicle.Show();
+
+
+            builder = new TruckBuilder();
+            shop.Construct(builder);
+            builder.Vehicle.Show();
         }
     }
 
@@ -87,6 +92,34 @@ namespace BuilderPattern
         public override void BuildDoors()
         {
             vehicle["doors"] = "0";
+        }
+    }
+
+    class TruckBuilder : VehicleBuilder
+    {
+        public TruckBuilder()
+        {
+            vehicle = new Vehicle("Truck");
+        }
+
+        public override void BuildFrame()
+        {
+            vehicle["frame"] = "Truck Frame";
+        }
+
+        public override void BuildEngine()
+        {
+            vehicle["engine"] = "5000 cc";
+        }
+
+        public override void BuildWheels()
+        {
+            vehicle["wheels"] = "20";
+        }
+
+        public override void BuildDoors()
+        {
+            vehicle["doors"] = "2";
         }
     }
 
