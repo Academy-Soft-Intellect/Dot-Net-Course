@@ -13,19 +13,19 @@ namespace BinarySearchExample
             //
             // Source array that is ordered ascending.
             //
-            string[] array = { "a", "e", "m", "n", "x", "z" };
-            //
-            // Call versions of the BinarySearch method.
-            //
-            int index1 = Array.BinarySearch(array, "m");
-            int index2 = Array.BinarySearch<string>(array, "x");
-            int index3 = Array.BinarySearch<string>(array, "E", StringComparer.OrdinalIgnoreCase);
-            //
-            // Write results.
-            //
-            Console.WriteLine(index1);
-            Console.WriteLine(index2);
-            Console.WriteLine(index3);
+            //string[] array = { "a", "e", "m", "n", "x", "z" };
+            ////
+            //// Call versions of the BinarySearch method.
+            ////
+            //int index1 = Array.BinarySearch(array, "m");
+            //int index2 = Array.BinarySearch<string>(array, "x");
+            //int index3 = Array.BinarySearch<string>(array, "E", StringComparer.OrdinalIgnoreCase);
+            ////
+            //// Write results.
+            ////
+            //Console.WriteLine(index1);
+            //Console.WriteLine(index2);
+            //Console.WriteLine(index3);
 
             int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8 };
             int index = BinarySearch(arr, 5);

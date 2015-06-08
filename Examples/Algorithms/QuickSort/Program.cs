@@ -8,57 +8,74 @@ namespace QuickSort
 {
     class Program
     {
-        static public int Partition(int[] numbers, int left, int right)
+        static List<int> RandomList(int size)
         {
-            int pivot = numbers[left];
+            List<int> ret = new List<int>(size);
+            Random rand = new Random(1);
+            for (int i = 0; i < size; i++)
+            {
+                ret.Add(rand.Next(size));
+            }
+            return ret;
+        }
+        static int MyPartition(List<int> list, int left, int right)
+        {
+            int start = left;
+            int pivot = list[start];
+            left++;
+            right--;
+
             while (true)
             {
-                while (numbers[left] < pivot)
+                while (left <= right && list[left] <= pivot)
                     left++;
 
-                while (numbers[right] > pivot)
+                while (left <= right && list[right] > pivot)
                     right--;
 
-                if (left < right)
+                if (left > right)
                 {
-                    int temp = numbers[right];
-                    numbers[right] = numbers[left];
-                    numbers[left] = temp;
+                    list[start] = list[left - 1];
+                    list[left - 1] = pivot;
+
+                    return left;
                 }
-                else
-                {
-                    return right;
-                }
+                int temp = list[left];
+                list[left] = list[right];
+                list[right] = temp;
+
             }
         }
 
-        static public void QuickSort_Recursive(int[] arr, int left, int right)
+        static void MyQuickSort(List<int> list, int left, int right)
         {
-            // For Recusrion
+            if (list == null || list.Count <= 1)
+                return;
+
             if (left < right)
             {
-                int pivot = Partition(arr, left, right);
-
-                if (pivot > 1)
-                    QuickSort_Recursive(arr, left, pivot - 1);
-
-                if (pivot + 1 < right)
-                    QuickSort_Recursive(arr, pivot + 1, right);
+                int pivotIdx = MyPartition(list, left, right);
+                MyQuickSort(list, left, pivotIdx - 1);
+                MyQuickSort(list, pivotIdx, right);
             }
         }
 
-        static void Main(string[] args)
+        static void DumpList(List<int> list)
         {
-            int[] numbers = { 3, 8, 7, 5, 2, 1, 9, 6, 4 };
-            int len = 9;
-
-            Console.WriteLine("QuickSort By Recursive Method");
-            QuickSort_Recursive(numbers, 0, len - 1);
-            for (int i = 0; i < 9; i++)
-                Console.WriteLine(numbers[i]);
-
+            list.ForEach(delegate(int val)
+            {
+                Console.Write(val);
+                Console.Write(", ");
+            });
             Console.WriteLine();
+        }
 
+        public static void Main()
+        {
+            List<int> list = RandomList(100);
+            DumpList(list);
+            MyQuickSort(list, 0, list.Count);
+            DumpList(list);
         }
     }
 }

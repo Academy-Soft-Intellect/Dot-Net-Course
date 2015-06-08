@@ -10,7 +10,19 @@ namespace SelectionSort
     {
         static void Main(string[] args)
         {
-            int[] array = new int[] { 64, 25, 12, 22, 11 };
+            int n = 500;
+
+            int[] array = new int[n];
+            Random rand = new Random();
+
+
+            for (int i = 0; i < n; i++)
+            {
+                array[i] = rand.Next(0, n);
+            }
+
+            int iterations = 0;
+
             for (int i = 0; i < array.Length - 1; i++)
             {
                 for (int j = i + 1; j < array.Length; j++)
@@ -21,12 +33,17 @@ namespace SelectionSort
                         array[i] = array[j];
                         array[j] = tmp;
                     }
+                    iterations++;
                 }
             }
             for (int i = 0; i < array.Length; i++) // print sorted array
             {
                 Console.Write(array[i] + " ");
             }
+
+            Console.WriteLine();
+
+            Console.WriteLine("Number of iterations: " + iterations);
         }
     }
 }
