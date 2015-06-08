@@ -14,13 +14,15 @@ namespace HashSetExample
 
             Console.WriteLine(string.Join(",", array1));
 
-            var hash = new HashSet<string>(array1);
+            HashSet<string> hash = new HashSet<string>(array1);
 
             string[] array2 = hash.ToArray();
 
             Console.WriteLine(string.Join(",", array2));
 
             hash.Add("dog");
+
+            array2 = hash.ToArray();
 
             Console.WriteLine(string.Join(",", array2));
 

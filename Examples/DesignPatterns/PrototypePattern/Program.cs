@@ -27,6 +27,9 @@ namespace PrototypePattern
             Color color2 = colormanager["peace"].Clone() as Color;
             Color color3 = colormanager["flame"].Clone() as Color;
 
+
+
+
         }
     }
 

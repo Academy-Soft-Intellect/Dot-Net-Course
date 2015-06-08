@@ -69,7 +69,7 @@ namespace FactoryPattern
 
         static void Main()
         {
-            for (int i = 0; i <= 3; i++)
+            for (int i = 0; i <= 6; i++)
             {
                 var position = Factory.Get(i);
                 Console.WriteLine("Where id = {0}, position = {1} ", i, position.Title);

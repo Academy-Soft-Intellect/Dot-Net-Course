@@ -19,18 +19,14 @@ namespace AbstractFactoryPattern
             ContinentFactory america = new AmericaFactory();
             world = new AnimalWorld(america);
             world.RunFoodChain();
-
-
         }
     }
-
-
     abstract class ContinentFactory
     {
         public abstract Herbivore CreateHerbivore();
         public abstract Carnivore CreateCarnivore();
     }
-
+    
     class AfricaFactory : ContinentFactory
     {
         public override Herbivore CreateHerbivore()
