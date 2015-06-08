@@ -21,11 +21,13 @@ namespace QuickSort
 
         static void Main(string[] args)
         {
+            int n = 1000;
+
             // Create an unsorted array of string elements
-            List<int> unsorted = RandomList(100);
+            List<int> unsorted = RandomList(n);
 
             // Print the unsorted array
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < n; i++)
             {
                 Console.Write(unsorted[i] + " ");
             }
@@ -33,10 +35,10 @@ namespace QuickSort
             Console.WriteLine();
 
             // Sort the array
-            Quicksort(unsorted, 0, 99);
+            Quicksort(unsorted, 0, n-1);
 
             // Print the sorted array
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < n; i++)
             {
                 Console.Write(unsorted[i] + " ");
             }
