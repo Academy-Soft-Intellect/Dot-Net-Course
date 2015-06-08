@@ -47,7 +47,7 @@ namespace QuickSort
         public static void Quicksort(List<int> elements, int left, int right)
         {
             int i = left, j = right;
-            IComparable pivot = elements[(left + right) / 2];
+            int pivot = elements[(left + right) / 2];
 
             while (i <= j)
             {
@@ -77,7 +77,6 @@ namespace QuickSort
             {
                 Quicksort(elements, left, j);
             }
-
             if (i < right)
             {
                 Quicksort(elements, i, right);
