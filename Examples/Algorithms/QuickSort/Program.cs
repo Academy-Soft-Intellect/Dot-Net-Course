@@ -18,64 +18,70 @@ namespace QuickSort
             }
             return ret;
         }
-        static int MyPartition(List<int> list, int left, int right)
+
+        static void Main(string[] args)
         {
-            int start = left;
-            int pivot = list[start];
-            left++;
-            right--;
+            // Create an unsorted array of string elements
+            List<int> unsorted = RandomList(100);
 
-            while (true)
+            // Print the unsorted array
+            for (int i = 0; i < 100; i++)
             {
-                while (left <= right && list[left] <= pivot)
-                    left++;
-
-                while (left <= right && list[right] > pivot)
-                    right--;
-
-                if (left > right)
-                {
-                    list[start] = list[left - 1];
-                    list[left - 1] = pivot;
-
-                    return left;
-                }
-                int temp = list[left];
-                list[left] = list[right];
-                list[right] = temp;
-
+                Console.Write(unsorted[i] + " ");
             }
-        }
 
-        static void MyQuickSort(List<int> list, int left, int right)
-        {
-            if (list == null || list.Count <= 1)
-                return;
+            Console.WriteLine();
 
-            if (left < right)
+            // Sort the array
+            Quicksort(unsorted, 0, 99);
+
+            // Print the sorted array
+            for (int i = 0; i < 100; i++)
             {
-                int pivotIdx = MyPartition(list, left, right);
-                MyQuickSort(list, left, pivotIdx - 1);
-                MyQuickSort(list, pivotIdx, right);
+                Console.Write(unsorted[i] + " ");
             }
-        }
 
-        static void DumpList(List<int> list)
-        {
-            list.ForEach(delegate(int val)
-            {
-                Console.Write(val);
-                Console.Write(", ");
-            });
             Console.WriteLine();
         }
 
-        public static void Main()
+        public static void Quicksort(List<int> elements, int left, int right)
         {
-            List<int> list = RandomList(100);
-            DumpList(list);
-            MyQuickSort(list, 0, list.Count);
-            DumpList(list);
+            int i = left, j = right;
+            IComparable pivot = elements[(left + right) / 2];
+
+            while (i <= j)
+            {
+                while (elements[i].CompareTo(pivot) < 0)
+                {
+                    i++;
+                }
+
+                while (elements[j].CompareTo(pivot) > 0)
+                {
+                    j--;
+                }
+
+                if (i <= j)
+                {
+                    // Swap
+                    int tmp = elements[i];
+                    elements[i] = elements[j];
+                    elements[j] = tmp;
+
+                    i++;
+                    j--;
+                }
+            }
+            // Recursive calls
+            if (left < j)
+            {
+                Quicksort(elements, left, j);
+            }
+
+            if (i < right)
+            {
+                Quicksort(elements, i, right);
+            }
         }
     }
 }
