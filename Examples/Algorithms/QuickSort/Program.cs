@@ -8,57 +8,81 @@ namespace QuickSort
 {
     class Program
     {
-        static public int Partition(int[] numbers, int left, int right)
+        static List<int> RandomList(int size)
         {
-            int pivot = numbers[left];
-            while (true)
+            List<int> ret = new List<int>(size);
+            Random rand = new Random(1);
+            for (int i = 0; i < size; i++)
             {
-                while (numbers[left] < pivot)
-                    left++;
-
-                while (numbers[right] > pivot)
-                    right--;
-
-                if (left < right)
-                {
-                    int temp = numbers[right];
-                    numbers[right] = numbers[left];
-                    numbers[left] = temp;
-                }
-                else
-                {
-                    return right;
-                }
+                ret.Add(rand.Next(size));
             }
-        }
-
-        static public void QuickSort_Recursive(int[] arr, int left, int right)
-        {
-            // For Recusrion
-            if (left < right)
-            {
-                int pivot = Partition(arr, left, right);
-
-                if (pivot > 1)
-                    QuickSort_Recursive(arr, left, pivot - 1);
-
-                if (pivot + 1 < right)
-                    QuickSort_Recursive(arr, pivot + 1, right);
-            }
+            return ret;
         }
 
         static void Main(string[] args)
         {
-            int[] numbers = { 3, 8, 7, 5, 2, 1, 9, 6, 4 };
-            int len = 9;
+            int n = 1000;
 
-            Console.WriteLine("QuickSort By Recursive Method");
-            QuickSort_Recursive(numbers, 0, len - 1);
-            for (int i = 0; i < 9; i++)
-                Console.WriteLine(numbers[i]);
+            // Create an unsorted array of string elements
+            List<int> unsorted = RandomList(n);
+
+            // Print the unsorted array
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write(unsorted[i] + " ");
+            }
 
             Console.WriteLine();
 
+            // Sort the array
+            Quicksort(unsorted, 0, n-1);
+
+            // Print the sorted array
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write(unsorted[i] + " ");
+            }
+
+            Console.WriteLine();
+        }
+
+        public static void Quicksort(List<int> elements, int left, int right)
+        {
+            int i = left, j = right;
+            int pivot = elements[(left + right) / 2];
+
+            while (i <= j)
+            {
+                while (elements[i].CompareTo(pivot) < 0)
+                {
+                    i++;
+                }
+
+                while (elements[j].CompareTo(pivot) > 0)
+                {
+                    j--;
+                }
+
+                if (i <= j)
+                {
+                    // Swap
+                    int tmp = elements[i];
+                    elements[i] = elements[j];
+                    elements[j] = tmp;
+
+                    i++;
+                    j--;
+                }
+            }
+            // Recursive calls
+            if (left < j)
+            {
+                Quicksort(elements, left, j);
+            }
+            if (i < right)
+            {
+                Quicksort(elements, i, right);
+            }
         }
     }
 }

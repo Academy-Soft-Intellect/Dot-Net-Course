@@ -10,11 +10,36 @@ namespace Complexity
     {
         static void Main(string[] args)
         {
+            int n = 5000;
+
+            int[] arr = new int[n];
+            Random rand = new Random();
+
+
+            for (int i = 0; i < n; i++)
+            {
+                arr[i] = rand.Next(0,n);
+            }
+
+            int startLinear = Environment.TickCount;
+            FindMaxElement(arr);
+            Console.WriteLine("Linear time in miliseconds: " + (Environment.TickCount - startLinear));
+
+
+            int quadratic = Environment.TickCount;
+            FindInversions(arr);
+            Console.WriteLine("Quadratic time in miliseconds: " + (Environment.TickCount - quadratic));
+
+
+
+            int cubic = Environment.TickCount;
+            Sum3(n);
+            Console.WriteLine("Cubic time in miliseconds: " + (Environment.TickCount - cubic));
 
         }
 
         //Линейна сложност - Този код ще работи добре, дори при голям брой елементи.
-        int FindMaxElement(int[] array)
+        static int FindMaxElement(int[] array)
         {
             int max = int.MinValue;
             for (int i = 1; i < array.Length; i++)
@@ -28,7 +53,7 @@ namespace Complexity
         }
 
         //Квадратична сложност - Този код ще работи добре, ако елементите не са повече от няколко хиляди или десетки хиляди.
-        private int FindInversions(int[] array)
+        static  int FindInversions(int[] array)
         {
             int inversions = 0;
             for (int i = 0; i < array.Length - 1; i++)
@@ -46,7 +71,7 @@ namespace Complexity
 
 
         //Кубична сложност - Този код ще работи добре, ако елементите в масива са под 1 000.
-        long Sum3(int n)
+        static long Sum3(int n)
         {
             long sum = 0;
             for (int a = 1; a < n; a++)
