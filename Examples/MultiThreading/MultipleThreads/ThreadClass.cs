@@ -14,7 +14,7 @@ namespace MultipleThreads
             for (int i = 0; i < 100; i++)
             {
                 Console.WriteLine("Thread1:job({0})", i);
-                Thread.Sleep(1);
+                Thread.Sleep(50);
             }
         }
 

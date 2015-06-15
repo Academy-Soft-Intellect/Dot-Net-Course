@@ -25,7 +25,8 @@ namespace ExceptionsHandling
             }
             catch (FileNotFoundException fnfe)
             {
-                Console.WriteLine("The file '{0}' is not found.", filename);
+                //Console.WriteLine("The file '{0}' is not found.", filename);
+                Console.WriteLine(fnfe.Message);
             }
             catch (IOException ioe)
             {
@@ -36,6 +37,7 @@ namespace ExceptionsHandling
                 Console.WriteLine("Exception handling passed!");
             }
 
-        }
+        }
+
     }
 }

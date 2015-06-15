@@ -9,26 +9,26 @@ namespace SuspendAndResume
 {
     class Program
     {
-        private Thread mThread;
+        private static Thread mThread;
 
-        private const string MESSAGE = "This application demonstrates " + "Thread.Suspend() and Thread.Resume() methods. ";
+        private const string MESSAGE = "This application demonstrates";
 
-        private void Main(string[] args)
+        private static void Main()
         {
-            mThread = new Thread(new ThreadStart(this.PrintMessages));
-            mThread.IsBackground = true;
+            mThread = new Thread(new ThreadStart(PrintMessages));
             mThread.Start();
-            SuspendThread();
             SpendSomeTime();
-            ResumeThread();
+            mThread.Suspend();
+            SpendSomeTime();
+            mThread.Resume();
         }
 
-        private void SpendSomeTime()
+        private static void SpendSomeTime()
         {
             long sum = 0;
-            for (int i = 0; i < 100000; i++)
+            for (int i = 0; i < 15000; i++)
             {
-                for (int j = 0; j < 100000; j++)
+                for (int j = 0; j < 15000; j++)
                 {
                     if (i == j)
                     {
@@ -38,26 +38,15 @@ namespace SuspendAndResume
             }
         }
 
-        private void SuspendThread()
+        private static void PrintMessages()
         {
-            mThread.Suspend();
-        }
 
-        private void ResumeThread()
-        {
-            mThread.Resume();
-        }
-
-        private void PrintMessages()
-        {
-            while (true)
+            foreach (char letter in MESSAGE.ToCharArray())
             {
-                foreach (char letter in MESSAGE.ToCharArray())
-                {
-                    Console.WriteLine(letter);
-                    Thread.Sleep(50);
-                }
+                Console.Write(letter);
+                Thread.Sleep(50);
             }
+            Console.WriteLine();
         }
     }
 }

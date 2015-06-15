@@ -11,9 +11,9 @@ namespace BadExample
         public void Job()
         {
             long sum = 0;
-            for (int i = 0; i < 100000; i++)
+            for (int i = 0; i < 15000; i++)
             {
-                for (int j = 0; j < 100000; j++)
+                for (int j = 0; j < 15000; j++)
                 {
                     if (i == j)
                     {
@@ -21,6 +21,7 @@ namespace BadExample
                     }
                 }
             }
+            Console.WriteLine("Finished");
         }
     }
 }
