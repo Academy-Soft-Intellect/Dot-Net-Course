@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadExample", "BadExample\BadExample.csproj", "{0699ECC6-AAFF-4D8B-88B1-024EE855DE36}"
 EndProject
@@ -10,6 +10,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuspendAndResume", "SuspendAndResume\SuspendAndResume.csproj", "{0972B71E-F0A8-4F10-BC2C-FD4CD354939B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoinThreads", "JoinThreads\JoinThreads.csproj", "{0187D47B-065D-493F-8256-1AD4F87C6890}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadPollExample", "ThreadPollExample\ThreadPollExample.csproj", "{27C43426-14AC-49D6-991E-E32CF7ED60CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuspendResumeForm", "SuspendResumeForm\SuspendResumeForm.csproj", "{0CAC9324-559E-438A-95BE-AC0F9A451205}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoinExample", "JoinExample\JoinExample.csproj", "{265A705A-0A58-4F3E-BB0F-0D9B62D42DCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreeThreads", "ThreeThreads\ThreeThreads.csproj", "{CA5D250F-577F-437F-BB55-C280FF4203E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +41,22 @@ Global
 		{0187D47B-065D-493F-8256-1AD4F87C6890}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0187D47B-065D-493F-8256-1AD4F87C6890}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0187D47B-065D-493F-8256-1AD4F87C6890}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27C43426-14AC-49D6-991E-E32CF7ED60CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27C43426-14AC-49D6-991E-E32CF7ED60CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27C43426-14AC-49D6-991E-E32CF7ED60CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27C43426-14AC-49D6-991E-E32CF7ED60CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CAC9324-559E-438A-95BE-AC0F9A451205}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CAC9324-559E-438A-95BE-AC0F9A451205}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CAC9324-559E-438A-95BE-AC0F9A451205}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CAC9324-559E-438A-95BE-AC0F9A451205}.Release|Any CPU.Build.0 = Release|Any CPU
+		{265A705A-0A58-4F3E-BB0F-0D9B62D42DCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{265A705A-0A58-4F3E-BB0F-0D9B62D42DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{265A705A-0A58-4F3E-BB0F-0D9B62D42DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{265A705A-0A58-4F3E-BB0F-0D9B62D42DCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA5D250F-577F-437F-BB55-C280FF4203E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA5D250F-577F-437F-BB55-C280FF4203E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA5D250F-577F-437F-BB55-C280FF4203E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA5D250F-577F-437F-BB55-C280FF4203E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

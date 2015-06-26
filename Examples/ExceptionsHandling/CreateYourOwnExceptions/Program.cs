@@ -20,7 +20,7 @@ namespace CreateYourOwnExceptions
                     double inputValue = Convert.ToDouble(Console.ReadLine());
                     double result = SquareRoot(inputValue);
 
-                    Console.WriteLine("The sqrt of {0} is {1:F6)\n", inputValue, result);
+                    Console.WriteLine("The sqrt of {0} is {1:F6}\n", inputValue, result);
                     continueLoop = false;
                 }
                 catch (FormatException formatException)
@@ -39,10 +39,13 @@ namespace CreateYourOwnExceptions
         public static double SquareRoot(double value)
         {
             if (value < 0)
-                throw new NegativeNumberException(
-                    "Square root of negative number not permitted.");
+            {
+                throw new NegativeNumberException("Square root of negative number not permitted.");
+            }
             else
+            { 
                 return Math.Sqrt(value);
+            }
         }
     }
 }

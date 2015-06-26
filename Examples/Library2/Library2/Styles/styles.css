@@ -1,0 +1,15 @@
+﻿body {
+}
+
+.resultsTd {
+    text-align: center;
+}
+
+.right {
+    border-left: 1px dashed black;
+    width: 150px;
+}
+
+.left {
+    width: 50px;
+}

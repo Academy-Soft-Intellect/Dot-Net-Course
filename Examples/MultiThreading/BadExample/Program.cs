@@ -11,11 +11,14 @@ namespace BadExample
     {
         static void Main(string[] args)
         {
-            TimeTakingJob job = new TimeTakingJob();
-            job.Job();
+            int start = Environment.TickCount;
+            //TimeTakingJob job = new TimeTakingJob();
+            //job.Job();
 
-            //Thread t = new Thread(new ThreadStart(new TimeTakingJob().Job));
-            //t.Start();
+            Thread t = new Thread(new ThreadStart(new TimeTakingJob().Job));
+            t.Start();
+            Console.WriteLine(Environment.TickCount - start);
+            
         }
     }
 }
