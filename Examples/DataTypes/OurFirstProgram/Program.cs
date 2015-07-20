@@ -4,12 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SampleSolution
+namespace OurFirstProgram
 {
     class Program
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello C#! This is our first program");
+
+            Console.ReadLine();
         }
     }
 }
