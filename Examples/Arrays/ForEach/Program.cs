@@ -10,7 +10,7 @@ namespace ForEach
     {
         static void Main(string[] args)
         {
-            int[] ourSecondArray = { 1, 2, 3, 4 };
+            int[] ourSecondArray = { 3451, 232, 3465465, 4 };
 
             foreach (int number in ourSecondArray)
             {

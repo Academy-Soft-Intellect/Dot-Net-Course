@@ -10,12 +10,13 @@ namespace DoWhile
     {
         static void Main(string[] args)
         {
-            int a = 1;
+            int a = 0;
             do
             {
                 Console.WriteLine(a);
                 a--;
             } while (a>0);
+
         }
     }
 }

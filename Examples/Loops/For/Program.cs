@@ -10,16 +10,19 @@ namespace For
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Enter a number:");
             int n = int.Parse(Console.ReadLine());
-            int k = n;
-            int m = int.Parse(Console.ReadLine());
 
-            for (int i = 1; i < m; i++)
+            Console.WriteLine("Enter second number:");
+            int k = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < n; i++)
             {
-                n = n * k;
+                for (int j = 0; j < k; j++)
+                {
+                    Console.WriteLine(i*j);
+                }
             }
-
-            Console.WriteLine(n);
         }
     }
 }

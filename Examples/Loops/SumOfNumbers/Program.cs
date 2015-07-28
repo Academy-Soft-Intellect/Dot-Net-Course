@@ -12,25 +12,33 @@ namespace SumOfNumbers
         {
             int number;
             int sum = 0;
-            //do
+            do
+            {
+                Console.WriteLine("Enter a number to add to the sum");
+                number = int.Parse(Console.ReadLine());
+                sum += number;
+            } while (number != 0);
+            Console.WriteLine(sum);
+
+            //for (; ;)
+            //{
+            //    number = int.Parse(Console.ReadLine());
+            //    sum += number;
+            //    if (number==0)
+            //    {
+            //        break;
+            //    }
+            //}
+            //Console.WriteLine(sum);
+
+            //while (number!=0)
             //{
             //    Console.WriteLine("Enter a number to add to the sum");
             //    number = int.Parse(Console.ReadLine());
             //    sum += number;
+            //}
 
-            //} while (number != 0);
             //Console.WriteLine(sum);
-
-            for (; ; )
-            {
-                number = int.Parse(Console.ReadLine());
-                sum += number;
-                if (number==0)
-                {
-                    break;
-                }
-            }
-            Console.WriteLine(sum);
 
         }
     }

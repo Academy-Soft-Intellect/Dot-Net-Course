@@ -10,22 +10,23 @@ namespace Break
     {
         static void Main(string[] args)
         {
-            int n = int.Parse(Console.ReadLine());
-            int k = n;
+            //int n = int.Parse(Console.ReadLine());
+            //int k = n;
             int m = int.Parse(Console.ReadLine());
 
             for (int i = 1;; i++)
             {
+                Console.WriteLine(i);
                 if (i==m)
                 {
                     break;
                 }
-                n = n * k;
+                //n = n * k;
             }
 
             //Math.Pow(m, n); смята m на степен n
 
-            Console.WriteLine(n);
+            //Console.WriteLine(n);
         }
     }
 }

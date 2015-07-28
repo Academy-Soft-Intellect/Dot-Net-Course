@@ -10,7 +10,7 @@ namespace CopyArray
     {
         static void Main(string[] args)
         {
-            int[] array = new int[] { 1, 2, 3, 3, 2, 1 };
+            int[] array = new int[] { 1, 2, 3, 7, 2, 1 };
 
             int[] array2 = new int[array.Length];
 

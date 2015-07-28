@@ -11,9 +11,9 @@ namespace While
         static void Main(string[] args)
         {
             int a = 5;
-            while (a>0)
+            while (a > 0)
             {
-                Console.WriteLine(a);
+                Console.WriteLine(a); 
                 a--;
             }
         }
