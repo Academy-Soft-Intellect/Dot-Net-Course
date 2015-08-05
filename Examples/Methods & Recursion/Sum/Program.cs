@@ -11,7 +11,7 @@ namespace Sum
         static void Main(string[] args)
         {
             int n = 1;
-            int max = 12;
+            int max = 28500;
             int sum = 0;
             Recursive(n, max, ref sum);
             Console.WriteLine(sum);
@@ -22,6 +22,7 @@ namespace Sum
             sum += n;
             if (n>=max)
             {
+                Console.WriteLine(n);
                 return 1;
             }
             Recursive(n + 1, max, ref sum);

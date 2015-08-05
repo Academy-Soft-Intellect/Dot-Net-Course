@@ -10,18 +10,16 @@ namespace Permutations
     {
         static readonly int n = int.Parse(Console.ReadLine());
 
-
-        static int[] a = new int[50];
+        static int[] array = new int[n];
         static void Print()
         {
             for (int i = 0; i < n; i++)
             {
-                Console.Write(a[i] + 1 + " ");
-
+                Console.Write(array[i] + 1 + " ");
             }
             Console.WriteLine();
         }
-        static void permute(int k)
+        static void Permute(int k)
         {
             int i, swap;
             if (k == 0)
@@ -33,14 +31,14 @@ namespace Permutations
 
                 for (i = 0; i < k; i++)
                 {
-                    swap = a[i];
-                    a[i] = a[k - 1];
-                    a[k - 1] = swap;
-                    permute(k - 1);
+                    swap = array[i];
+                    array[i] = array[k - 1];
+                    array[k - 1] = swap;
+                    Permute(k - 1);
 
-                    swap = a[i];
-                    a[i] = a[k - 1];
-                    a[k - 1] = swap;
+                    swap = array[i];
+                    array[i] = array[k - 1];
+                    array[k - 1] = swap;
 
                 }
             }
@@ -49,12 +47,10 @@ namespace Permutations
         {
             for (int i = 1; i < n; i++)
             {
-
-                a[i] = i;
-
+                array[i] = i;
             }
             Console.WriteLine();
-            permute(n);
+            Permute(n);
         }
     }
 }

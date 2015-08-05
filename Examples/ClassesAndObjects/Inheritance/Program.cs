@@ -10,12 +10,9 @@ namespace Inheritance
     {
         static void Main(string[] args)
         {
-            Car myCar = new Car("$$$", "Blue");
-            myCar.Model = "Mercedes";
+            Car myCar = new Car("$$$", "Blue", "Mercedes");
 
-
-            Car yourCar = new Car("$$$", "Red");
-            yourCar.Model = "AUDI";
+            Car yourCar = new Car("$$$", "Red", "Audi");
 
             Console.WriteLine("My car is a {0} {1} and costs {2}", myCar.Color, myCar.Model, myCar.Price);
 

@@ -31,6 +31,7 @@ namespace People
 
         public Person()
         {
+            count++;
         }
 
         public Person(string name, int age, string email)
@@ -38,6 +39,7 @@ namespace People
             this.name = name;
             this.age = age;
             this.email = email;
+            count++;
         }
 
 

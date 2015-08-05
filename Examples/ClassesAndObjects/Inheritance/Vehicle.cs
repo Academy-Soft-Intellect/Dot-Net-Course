@@ -22,6 +22,8 @@ namespace Inheritance
             set { color = value; }
         }
 
+        public Vehicle()
+        { }
         public Vehicle(string price, string color)
         {
             this.Price = price;
