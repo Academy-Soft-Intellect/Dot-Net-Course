@@ -11,22 +11,18 @@ namespace Inheritance
         private int weight;
         public int Weight
         {
-            get
-            {
-                return weight;
-            }
-            set
-            {
-                this.weight = value;
-            }
+            get { return weight; }
+            set { weight = value; }
         }
+        
+
         public Lion(bool male, int weight)
             :base(male)
         {
             this.weight = weight;
         }
 
-        public bool Equals(Lion lion)
+        public bool isEqual(Lion lion)
         {
             if (this.Weight == lion.Weight &&
                 this.Male == lion.Male)

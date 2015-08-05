@@ -9,8 +9,7 @@ namespace Inheritance
 {
     interface IEquatable<T>
     {
-        bool Equals(T obj);
-
+        bool isEqual(T obj);
     }
 
 }

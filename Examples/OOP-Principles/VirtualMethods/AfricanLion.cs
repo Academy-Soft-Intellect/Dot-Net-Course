@@ -19,7 +19,7 @@ namespace VirtualMethods
         }
         public override void CatchPray(object pray)
         {
-            Console.WriteLine("AfricanLion.CatchPray");
+            Console.WriteLine("AfricanLion.CatchPray " + this.Weight);
         }
 
     }

@@ -10,12 +10,11 @@ namespace AbstractionWithPolymorph
     {
         public Dog(string name) : base(name)
         {
-            this.Name = name;
         }
 
         protected override String GetTypicalSound()
         {
-            return "Bau! I am" +this.Name ;
+            return "Bau! I am " +this.Name ;
         }
 
     }

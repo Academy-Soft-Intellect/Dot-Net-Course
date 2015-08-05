@@ -11,14 +11,8 @@ namespace Inheritance
         private bool male;
         public bool Male
         {
-            get
-            {
-                return male;
-            }
-            set
-            {
-                this.male = value;
-            }
+            get { return male; }
+            set { male = value; }
         }
 
         private string name;
@@ -27,7 +21,11 @@ namespace Inheritance
             get { return name; }
             set { name = value; }
         }
-        public Cat() : this("gosho") { }
+
+        public Cat() 
+        { 
+        }
+
         public Cat(bool male)
         {
             this.male = male;

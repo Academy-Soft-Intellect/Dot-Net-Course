@@ -40,7 +40,7 @@ namespace VirtualMethods
 
         public override void CatchPray(object pray)
         {
-            Console.WriteLine("Lion.CatchPray");
+            Console.WriteLine("Lion.CatchPray " + this.Male);
         }
 
     }

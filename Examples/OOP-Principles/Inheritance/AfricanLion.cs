@@ -14,16 +14,14 @@ namespace Inheritance
             get { return color; }
             set { color = value; }
         }
-
        
         public AfricanLion(bool male, int weight, string color)
             : base(male, weight)
         {
             this.color = color;
-        
         }
 
-        public bool Equals(AfricanLion afrLion)
+        public bool isEqual(AfricanLion afrLion)
         {
             if (this.Weight == afrLion.Weight &&
                 this.Male == afrLion.Male && 

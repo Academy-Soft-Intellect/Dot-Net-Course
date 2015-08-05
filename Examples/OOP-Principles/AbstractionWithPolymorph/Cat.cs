@@ -10,11 +10,10 @@ namespace AbstractionWithPolymorph
     {
         public Cat(string name) : base(name)
         {
-            this.Name = name;
         }
         protected override string GetTypicalSound()
         {
-            return "Мяу! I am" + this.Name;
+            return "Мяу! I am " + this.Name;
         }
     }
 }
