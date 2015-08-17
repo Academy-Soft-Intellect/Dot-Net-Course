@@ -40,5 +40,6 @@ namespace Inheritance
             this.male = male;
             this.name = name;
         }
+
     }
 }

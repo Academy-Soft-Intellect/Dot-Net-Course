@@ -37,6 +37,5 @@ namespace Inheritance
         {
             return string.Format("Male: {0}, weight: {1}", Male, Weight);
         }
-
     }
 }
