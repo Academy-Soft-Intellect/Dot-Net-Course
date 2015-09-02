@@ -18,6 +18,7 @@ namespace DictionaryExample
             dict.Add(4, "Four");
             dict.Add(2, "Two");
             dict[5] = "Five";
+            dict[5] = "ssss";
 
             for (int i = 0; i < 8; i++)
             {
@@ -32,10 +33,10 @@ namespace DictionaryExample
                 Console.WriteLine("Success");
             }
 
-            foreach (var item in dict)
-            {
-                Console.WriteLine(item.Key);
-            }
+            //foreach (var item in dict)
+            //{
+            //    Console.WriteLine(item.Key + " " + item.Value);
+            //}
         }
     }
 }

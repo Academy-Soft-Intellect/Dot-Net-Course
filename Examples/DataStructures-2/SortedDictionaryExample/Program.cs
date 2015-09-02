@@ -12,11 +12,11 @@ namespace SortedDictionaryExample
         {
             SortedDictionary<int, string> dict = new SortedDictionary<int, string>();
 
-
             dict.Add(3, "Three");
-            dict.Add(1, "One");
-            dict.Add(4, "Four");
-            dict.Add(2, "Two");
+            dict.Add(2, "One");
+            dict.Add(4, "One");
+            dict.Add(1, "Two");
+            dict.Add(1, "Two");
 
             foreach (var item in dict)
             {
