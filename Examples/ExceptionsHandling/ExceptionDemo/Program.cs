@@ -11,11 +11,12 @@ namespace ExceptionDemo
     {
         static void Main(string[] args)
         {
-            ReadFile("ttt.txt");
+            int a = int.Parse(Console.ReadLine());
+            //ReadFile("ttt.txt");
         }
         static void ReadFile(string filename)
         {
-            TextReader reader = new StreamReader(filename);
+            StreamReader reader = new StreamReader(filename);
             string line = reader.ReadLine();
             Console.WriteLine(line);
             reader.Close();

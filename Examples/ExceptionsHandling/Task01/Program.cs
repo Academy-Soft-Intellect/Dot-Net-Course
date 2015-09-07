@@ -15,7 +15,7 @@ namespace Task01
                 int number = int.Parse(Console.ReadLine());
                 Console.WriteLine(number*5);
             }
-            catch (FormatException ex)
+            catch (FormatException)
             {
                 Console.WriteLine("This is not a number");
             }

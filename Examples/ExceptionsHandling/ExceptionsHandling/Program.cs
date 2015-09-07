@@ -23,11 +23,11 @@ namespace ExceptionsHandling
                 Console.WriteLine(line);
                 reader.Close();
             }
-            catch (FileNotFoundException fnfe)
-            {
-                //Console.WriteLine("The file '{0}' is not found.", filename);
-                Console.WriteLine(fnfe.Message);
-            }
+            //catch (FileNotFoundException fnfe)
+            //{
+            //    Console.WriteLine("The file '{0}' was not found.", filename);
+            //    //Console.WriteLine(fnfe.Message);
+            //}
             catch (IOException ioe)
             {
                 Console.WriteLine(ioe.StackTrace);

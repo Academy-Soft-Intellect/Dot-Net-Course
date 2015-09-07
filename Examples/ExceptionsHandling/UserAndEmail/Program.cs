@@ -10,11 +10,9 @@ namespace UserAndEmail
     {
         static void Main(string[] args)
         {
-            User user1 = new User();
             try
             {
-                user1.Email = "test@1";
-                user1.Password = "sssssda";
+                User user1 = new User("test@1", "sssssda");
             }
             catch (EmailException ex)
             {

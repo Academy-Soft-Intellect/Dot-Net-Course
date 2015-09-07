@@ -11,16 +11,19 @@ namespace ResourceFree
     {
         static void Main(string[] args)
         {
-            int a = 3;
-            int b = 4;
-
-            if (a==3 || ++b==8)
+            StreamWriter reader = new StreamWriter("");
+            try
             {
-                a += b++;
             }
+            catch (Exception)
+            {
 
-            Console.WriteLine(a);
-            Console.WriteLine(b);
+                throw;
+            }
+            finally
+            {
+                reader.Close();
+            }
 
         }
     }

@@ -14,7 +14,6 @@ namespace UserAndEmail
             get { return email; }
             set
             {
-
                 if (CheckEmail(value))
                 {
                     this.email = value;
@@ -44,13 +43,10 @@ namespace UserAndEmail
             }
         }
 
-        public User()
-        {
-
-        }
-
         public User(string email, string pass)
         {
+            this.Email = email;
+            this.Password = pass;
         }
 
 
@@ -58,22 +54,14 @@ namespace UserAndEmail
         {
             if (pass.Length >= 6)
             {
-                bool containsDigit = false;
                 foreach (char symbol in pass)
                 {
                     if (char.IsDigit(symbol))
                     {
-                        containsDigit = true;
+                        return true;
                     }
                 }
-                if (containsDigit)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
+                return false;
             }
             else
             {
@@ -83,14 +71,19 @@ namespace UserAndEmail
 
         private bool CheckEmail(string email)
         {
-            if (email.Length > 5 && email.Contains('@'))
-            {
-                return true;
-            }
-            else
+            if (email.Length < 5)
             {
                 return false;
             }
+            if (!email.Contains('@'))
+            {
+                return false;
+            }
+            if (!email.Contains('.'))
+            {
+                return false;
+            }
+            return true;
         }
     }
 }
