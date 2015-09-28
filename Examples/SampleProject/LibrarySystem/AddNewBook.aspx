@@ -27,7 +27,7 @@
         <br />
         <br />
         <asp:Label Text="Price:" runat="server" ID="priceLabel" />
-        <asp:TextBox runat="server" id="priceTxtBox" TextMode="Number" />
+        <asp:TextBox runat="server" id="priceTxtBox" TextMode="Date" />
         <br />
         <br />
         <asp:Label Text="Genre:" runat="server" ID="genreLabel" />
