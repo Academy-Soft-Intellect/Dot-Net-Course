@@ -10,13 +10,22 @@ namespace StringExamples
     {
         static void Main(string[] args)
         {
-            string myString = "Hello ";
-            string mySecondString = "World";
-
-            Console.WriteLine(myString + mySecondString);
-
-
-            Console.WriteLine(myString[5]);
+            Console.WriteLine("oo");
+            Console.WriteLine("oooo");
+            Console.WriteLine("oooooo");
+            Console.WriteLine(" oo  ");
+            Console.WriteLine("oooooooooo");
+            Console.WriteLine("oooooooooooo");
+            Console.WriteLine("oooooooooooooo");
+            Console.WriteLine("  oo");
+            Console.WriteLine("oooooooooooooooooo");
+            Console.WriteLine("oooooooooooooooooooo");
+            Console.WriteLine("oooooooooooooooooooooo");
+            Console.WriteLine("oooooooooooooooooooooooo");
+            Console.WriteLine("ooooooo");
+            Console.WriteLine("ooooooo");
+            Console.WriteLine("ooooooo");
+            Console.WriteLine("ooooooo");
         }
     }
 }
