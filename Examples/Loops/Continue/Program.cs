@@ -18,6 +18,7 @@ namespace Continue
                     continue;
                 }
                 sum += i;
+                Console.WriteLine(i);
             }
             Console.WriteLine(sum);
         }

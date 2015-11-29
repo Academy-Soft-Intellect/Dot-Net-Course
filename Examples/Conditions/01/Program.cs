@@ -29,6 +29,7 @@ namespace Conditions01
                 i += 4;
             }
             Console.WriteLine(i);
+
         }
     }
 }

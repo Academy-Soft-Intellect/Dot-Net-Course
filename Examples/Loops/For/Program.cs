@@ -10,18 +10,34 @@ namespace For
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter a number:");
-            int n = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter a number:");
+            //int n = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter second number:");
-            int k = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter second number:");
+            //int k = int.Parse(Console.ReadLine());
 
-            for (int i = 0; i < n; i++)
+            //for (int index = 10; index >= 0; index--)
+            //{
+            //    Console.WriteLine(index);
+            //}
+
+            //int counter = 0;
+
+            //for (int i = 0, l = 0; i <= 15 && l < 12; i++, l++)
+            //{
+            //    for (int j = 0; j < k; j++)
+            //    {
+            //        for (int m = 0; m < 100; m++)
+            //        {
+            //            Console.WriteLine(++counter);
+            //        }
+            //    }
+            //}
+
+
+            for (int i = 0, l = 0; i <= 15 && l < 12; i++, l++)
             {
-                for (int j = 0; j < k; j++)
-                {
-                    Console.WriteLine(i*j);
-                }
+                Console.WriteLine(i);
             }
         }
     }

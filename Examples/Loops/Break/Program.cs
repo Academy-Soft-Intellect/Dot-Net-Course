@@ -14,7 +14,7 @@ namespace Break
             //int k = n;
             int m = int.Parse(Console.ReadLine());
 
-            for (int i = 1;; i++)
+            for (int i = 1; ; i++)
             {
                 Console.WriteLine(i);
                 if (i==m)
