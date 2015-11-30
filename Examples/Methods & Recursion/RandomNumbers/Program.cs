@@ -12,23 +12,29 @@ namespace RandomNumbers
         static void Main(string[] args)
         {
             Random rand = new Random();
+            int[] arr = new int[10];
 
-            List<int> list = new List<int>();
-
-            for (int i = 0; i < 11; i++)
+            for (int i = 0; i < 10; i++)
             {
-                int current = rand.Next(1, 12);
-                if (list.Contains(current))
-                {
-                    i--;
-                }
-                else
-                {
-                    list.Add(current);
-                }
+                arr[i] = rand.Next(1,100);
             }
 
-            foreach (var item in list)
+            //List<int> list = new List<int>();
+
+            //for (int i = 0; i < 11; i++)
+            //{
+            //    int current = rand.Next(1, 12);
+            //    if (list.Contains(current))
+            //    {
+            //        i--;
+            //    }
+            //    else
+            //    {
+            //        list.Add(current);
+            //    }
+            //}
+
+            foreach (var item in arr)
             {
                 Console.WriteLine(item);
             }

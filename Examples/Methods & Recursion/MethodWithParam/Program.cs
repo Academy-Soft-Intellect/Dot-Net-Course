@@ -22,20 +22,33 @@ namespace MethodWithParam
             string[] names = new string[] { "1dsa", "2das", "3sadas" };
 
             //PrintNumbers(names);
-
+            Console.WriteLine();
             PrintNumbers(numbers, numbers2);
         }
 
         private static void PrintNumbers(int[] numbers, int[] numbers2)
         {
-            throw new NotImplementedException();
+            int firstSum = CalculateSum(numbers);
+            int secondSum = CalculateSum(numbers2);
+            Console.WriteLine(firstSum+secondSum);
+            //PrintNumbers(numbers2);
+        }
+
+        private static int CalculateSum(int[] numbers)
+        {
+            int sum = 0;
+            foreach (var item in numbers)
+            {
+                sum += item;
+            }
+            return sum;
         }
 
         private static void PrintNumbers(string[] names)
         {
             foreach (var item in names)
             {
-                Console.WriteLine(item);
+                Console.Write(item + "\t");
             }
         }
 
@@ -43,7 +56,7 @@ namespace MethodWithParam
         {
             foreach (var item in array2)
             {
-                Console.WriteLine(item);
+                Console.Write(item + "\t");
             }
         }
 

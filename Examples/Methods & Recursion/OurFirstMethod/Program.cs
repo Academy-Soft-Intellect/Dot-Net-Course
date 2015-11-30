@@ -10,16 +10,31 @@ namespace OurFirstMethod
     {
         static void Main(string[] args)
         {
-            //string name = "My name";
+            string name = "My name";
 
-            //PrintMyName(name);
+            PrintMyName(name);
 
-            PrintMyName();
-            Console.WriteLine("Waiting....");
-            PrintMyName();
-            Console.WriteLine("Done");
+            //PrintMyName();
+            //Console.WriteLine("Waiting....");
+            //PrintMyName();
+            //Console.WriteLine("Done");
             string secondName = "Your name";
-            //PrintMyName(secondName);
+            PrintMyName(secondName);
+
+            PrintMyName("dsadasdasda");
+
+            PrintMyInfo(25, "Ivaylo");
+        }
+
+        private static void PrintMyInfo(int age, string name)
+        {
+            Console.WriteLine(name);
+            Console.WriteLine(age);
+        }
+
+        private static void PrintMyName(string firstName)
+        {
+            Console.WriteLine(firstName);
         }
 
         private static void PrintMyName()

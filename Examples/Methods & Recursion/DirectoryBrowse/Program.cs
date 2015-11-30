@@ -12,9 +12,9 @@ namespace DirectoryBrowse
         static void Main(string[] args)
         {
             Console.WriteLine("Enter which directory you want to browse");
-            char dir = char.Parse(Console.ReadLine());
+            string dir = Console.ReadLine();
             string root = dir + @":\";
-            browseDirectory(root);
+            browseDirectory(dir);
         }
 
         private static void browseDirectory(string root)
