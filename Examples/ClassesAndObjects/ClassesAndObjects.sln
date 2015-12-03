@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employees", "Employees\Empl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySecondClass", "MySecondClass\MySecondClass.csproj", "{B899CF86-9B18-4406-A3C9-0129C966FD9B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstTouchWithClassesAndObjects", "FirstTouchWithClassesAndObjects\FirstTouchWithClassesAndObjects.csproj", "{C460E21D-0CE0-40D9-B9AC-24D85DE39A25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingANamespace", "UsingANamespace\UsingANamespace.csproj", "{6B11198E-39D1-4099-8A89-2B05372F88DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{B899CF86-9B18-4406-A3C9-0129C966FD9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B899CF86-9B18-4406-A3C9-0129C966FD9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B899CF86-9B18-4406-A3C9-0129C966FD9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C460E21D-0CE0-40D9-B9AC-24D85DE39A25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C460E21D-0CE0-40D9-B9AC-24D85DE39A25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C460E21D-0CE0-40D9-B9AC-24D85DE39A25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C460E21D-0CE0-40D9-B9AC-24D85DE39A25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B11198E-39D1-4099-8A89-2B05372F88DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B11198E-39D1-4099-8A89-2B05372F88DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B11198E-39D1-4099-8A89-2B05372F88DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B11198E-39D1-4099-8A89-2B05372F88DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -29,5 +29,11 @@ namespace Inheritance
             this.Price = price;
             this.Color = color;
         }
+
+        public void PrintInfo()
+        {
+            Console.WriteLine(this.Price);
+            Console.WriteLine(this.Color);
+        }
     }
 }

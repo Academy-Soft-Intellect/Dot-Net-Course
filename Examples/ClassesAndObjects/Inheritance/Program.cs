@@ -10,13 +10,18 @@ namespace Inheritance
     {
         static void Main(string[] args)
         {
-            Car myCar = new Car("$$$", "Blue", "Mercedes");
+            Vehicle myV = new Vehicle();
+            myV.Price = "200";
+            myV.Color = "Blue";
+            myV.PrintInfo();
 
-            Car yourCar = new Car("$$$", "Red", "Audi");
-
-            Console.WriteLine("My car is a {0} {1} and costs {2}", myCar.Color, myCar.Model, myCar.Price);
-
-            Console.WriteLine("Your car is a {0} {1} and costs {2}", yourCar.Color, yourCar.Model, yourCar.Price);
+            Car myCar = new Car();
+            myCar.Price = "300";
+            myCar.Color = "red";
+            myCar.Model = "sdasda";
+            myCar.PrintInfo();
+            //MotorBike bike = new MotorBike();
+            //bike.
         }
     }
 }

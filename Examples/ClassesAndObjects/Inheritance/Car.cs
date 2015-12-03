@@ -15,10 +15,20 @@ namespace Inheritance
             set { model = value; }
         }
 
+        public Car()
+        { }
+
         public Car(string price, string color, string model)
             :base(price,color)
         {
             this.model = model;
+        }
+
+        public void PrintInfo()
+        {
+            Console.WriteLine(this.Price);
+            Console.WriteLine(this.Color);
+            Console.WriteLine(this.Model);
         }
     }
 }
