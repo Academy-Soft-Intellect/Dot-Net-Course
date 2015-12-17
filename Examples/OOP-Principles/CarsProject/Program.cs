@@ -15,10 +15,15 @@ namespace CarsProject
             //Console.WriteLine(veh);
 
             Car car = new Car(200, 5, "Lada", "Niva");
-            Console.WriteLine(car);
+            //Console.WriteLine(car);
 
             Bus bus = new Bus(160, 3, 3, 1500);
-            Console.WriteLine(bus);
+            //Console.WriteLine(bus);
+
+
+            Console.WriteLine(car.CalculateMaxSpeed());
+
+            Console.WriteLine(bus.CalculateMaxSpeed());
 
             Console.WriteLine(Car.tiresBrand);
         }

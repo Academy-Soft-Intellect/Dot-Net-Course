@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CarsProject
 {
-    class Bus : Vehicle
+    class Bus : Vehicle, IVehicle
     {
         private int weight;
         public int Weight
@@ -34,6 +34,17 @@ namespace CarsProject
             return "This vehicle is a bus and has a top speed " + this.MaxSpeed 
                 + " and has " + NumberOfSeats + " seats!" + 
                 "And it is also " + weight + " tons of weight and has " + capacity + " capacity"; 
+        }
+
+        public int CalculateMaxSpeed()
+        {
+            return this.capacity*this.weight;
+        }
+
+
+        public string Print()
+        {
+            throw new NotImplementedException();
         }
     }
 }

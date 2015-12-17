@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AbstractClasses
 {
-    abstract class Abstraction
+    abstract class Abstraction : IAbstractable
     {
         private string name;
         public string Name
@@ -23,6 +23,16 @@ namespace AbstractClasses
         public Abstraction(string name)
         {
             this.name = name;
+        }
+
+        public abstract string PrintInfo();
+
+
+        public abstract string PrintResult();
+
+        private void Calculate()
+        {
+            Console.WriteLine(this.name);
         }
     }
 }

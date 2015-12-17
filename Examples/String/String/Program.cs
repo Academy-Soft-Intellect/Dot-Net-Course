@@ -1,19 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AbstractClasses
+namespace String
 {
     class Program
     {
         static void Main(string[] args)
         {
-            //Abstraction obj = new Abstraction();
-
-            ChildClass child = new ChildClass("Aa", 5);
-            Console.WriteLine(child.Name);
+            int a = 5;
+            Console.WriteLine(a.GetType());
         }
     }
 }

@@ -19,6 +19,22 @@ namespace AbstractClasses
             : base(name)
         {
             this.age = age;
+            DoubleName();
+        }
+
+        public override string PrintInfo()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override string PrintResult()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void DoubleName()
+        {
+            this.Name += 2;
         }
     }
 }

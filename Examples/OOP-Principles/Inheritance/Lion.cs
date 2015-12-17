@@ -14,7 +14,6 @@ namespace Inheritance
             get { return weight; }
             set { weight = value; }
         }
-        
 
         public Lion(bool male, int weight)
             :base(male)
@@ -36,6 +35,11 @@ namespace Inheritance
         public override string ToString()
         {
             return string.Format("Male: {0}, weight: {1}", Male, Weight);
+        }
+
+        public override string PrintInfo()
+        {
+            return string.Format(this.Weight + this.Name);
         }
     }
 }

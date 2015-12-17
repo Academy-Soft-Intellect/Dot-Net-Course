@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CarsProject
 {
-    class Car : Vehicle
+    class Car : Vehicle, IVehicle
     {
         public static string tiresBrand = "Continental";
 
@@ -38,5 +38,14 @@ namespace CarsProject
                 "And it is also a " + brand + " " + model; 
         }
 
+        public int CalculateMaxSpeed()
+        {
+            return 299;
+        }
+
+        public string Print()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

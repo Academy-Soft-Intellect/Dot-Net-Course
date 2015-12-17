@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Abstraction.cs" />
     <Compile Include="ChildClass.cs" />
+    <Compile Include="IAbstractable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

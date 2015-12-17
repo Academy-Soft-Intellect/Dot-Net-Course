@@ -23,12 +23,22 @@ namespace Inheritance
             //Console.WriteLine(cat2.Name);
 
             Lion lion = new Lion(true, 80);
+            lion.Name = "Lion1";
 
-            Lion lion2 = new Lion(true, 80);
+            Cat cat1 = new Cat();
+            cat1.Name = "Cat1";
+
+            Console.WriteLine(lion.PrintInfo());
+
+
+            Console.WriteLine(cat1.PrintInfo());
+
+
+
 
             //AfricanLion lion3 = new AfricanLion(true, 80, "orange");
 
-            Console.WriteLine(lion.Equals(lion2));
+            //Console.WriteLine(lion.Equals(lion2));
         }
     }
 }

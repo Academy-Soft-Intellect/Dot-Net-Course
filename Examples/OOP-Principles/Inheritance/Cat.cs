@@ -41,5 +41,9 @@ namespace Inheritance
             this.name = name;
         }
 
+        public virtual string PrintInfo()
+        {
+            return string.Format(this.Name);
+        }
     }
 }
