@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ToStringDemo
 {
-    public class Student
+    public class Student : IEquatable<Student>
     {
         private string name;
         public string Name
@@ -44,6 +45,11 @@ namespace ToStringDemo
         {
             return string.Format("Student {0} {1} has a F№: {2} and is in group {3}",
                 this.name, this.family, this.facultyNumber, this.group);
+        }
+
+        public bool Equals(Student other)
+        {
+            return this.FacultyNumber > other.FacultyNumber;
         }
     }
 }

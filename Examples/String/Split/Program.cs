@@ -12,7 +12,7 @@ namespace Split
         {
             string name = "Pesho Georgiev Dimitrov";
 
-            string[] names = name.Split(' ', 'e');
+            string[] names = name.Split(new string[] {"Georg" }, StringSplitOptions.RemoveEmptyEntries);
 
             foreach (var item in names)
             {

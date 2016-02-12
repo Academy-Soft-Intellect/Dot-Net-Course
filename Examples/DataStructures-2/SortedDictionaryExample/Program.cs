@@ -16,11 +16,10 @@ namespace SortedDictionaryExample
             dict.Add(2, "One");
             dict.Add(4, "One");
             dict.Add(1, "Two");
-            dict.Add(1, "Two");
 
             foreach (var item in dict)
             {
-                Console.WriteLine(item.Value);
+                Console.WriteLine(item);
             }
 
         }

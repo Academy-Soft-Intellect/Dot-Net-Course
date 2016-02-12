@@ -20,23 +20,25 @@ namespace DictionaryExample
             dict[5] = "Five";
             dict[5] = "ssss";
 
-            for (int i = 0; i < 8; i++)
-            {
-                dict.Add(6 + i, "a");
-            }
+
+            //for (int i = 0; i < 8; i++)
+            //{
+            //    dict.Add(6 + i, "a");
+            //}
 
             string test;
 
-            if (dict.TryGetValue(4, out test))
+            if (dict.TryGetValue(7, out test))
             {
                 Console.WriteLine(test);
                 Console.WriteLine("Success");
             }
 
-            //foreach (var item in dict)
-            //{
-            //    Console.WriteLine(item.Key + " " + item.Value);
-            //}
+            foreach (var item in dict)
+            {
+                Console.WriteLine(item);
+                Console.WriteLine(item.Key + " " + item.Value);
+            }
         }
     }
 }

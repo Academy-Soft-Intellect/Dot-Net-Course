@@ -11,11 +11,14 @@ namespace WriteFile
     {
         static void Main(string[] args)
         {
-            using (StreamWriter writer = new StreamWriter("numbers.txt"))
+            using (StreamReader reader = new StreamReader(""))
             {
-                for (int i = 10; i < 20; i++)
+                using (StreamWriter writer = new StreamWriter("numbers.txt", true))
                 {
-                    writer.WriteLine(i);
+                    for (int i = 1; i < 20; i++)
+                    {
+                        writer.Write(i);
+                    }
                 }
             }
         }

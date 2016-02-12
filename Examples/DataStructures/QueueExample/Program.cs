@@ -15,6 +15,8 @@ namespace QueueExample
             queue.Enqueue("Entry number Two");
             queue.Enqueue("Entry number Three");
             queue.Enqueue("Entry number Four");
+            Console.WriteLine("First to remove = " + queue.Peek());
+
             while (queue.Count > 0)
             {
                 string msg = queue.Dequeue();

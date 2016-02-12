@@ -21,7 +21,7 @@ namespace QuickSort
 
         static void Main(string[] args)
         {
-            int n = 1000;
+            int n = 6;
 
             // Create an unsorted array of string elements
             List<int> unsorted = RandomList(n);

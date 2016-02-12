@@ -11,15 +11,21 @@ namespace ExceptionDemo
     {
         static void Main(string[] args)
         {
-            int a = int.Parse(Console.ReadLine());
-            //ReadFile("ttt.txt");
+            try
+            {
+
+                int a = int.Parse(Console.ReadLine());
+            }
+            catch (FormatException error)
+            {
+                Console.WriteLine(error.Message);
+                Console.WriteLine("You have to write a number");
+            }
+            finally
+            {
+                Console.WriteLine("If you want reset");
+            }
         }
-        static void ReadFile(string filename)
-        {
-            StreamReader reader = new StreamReader(filename);
-            string line = reader.ReadLine();
-            Console.WriteLine(line);
-            reader.Close();
-        }
+
     }
 }

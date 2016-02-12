@@ -16,7 +16,14 @@ namespace ToStringDemo
             st.FacultyNumber = 123;
             st.Group = "AK-47";
 
+            Student st2 = new Student();
+            st2.Name = "Az";
+            st2.Family = "Sum";
+            st2.FacultyNumber = 1234;
+            st2.Group = "AK-47";
+
             Console.WriteLine(st);
+            Console.WriteLine(st.Equals(st2));
         }
     }
 }

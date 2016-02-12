@@ -11,20 +11,32 @@ namespace ReadFile
     {
         static void Main(string[] args)
         {
-            using (StreamReader reader = new StreamReader("../Test/test23.txt"))
+            try
             {
-                string line = reader.ReadLine();
-                int lineNumber = 0;
-                while (line != null)
+                using (StreamReader reader = new StreamReader("../../obj/test3.txt"))
                 {
-                    lineNumber++;
-                    Console.WriteLine("Line {0}: {1}", lineNumber, line);
-                    line = reader.ReadLine();
-                }
-                //string text = reader.ReadToEnd();
+                    int start = Environment.TickCount;
+                    string line = reader.ReadLine();
+                    int lineNumber = 0;
+                    while (line != null)
+                    {
+                        lineNumber++;
+                        //Console.WriteLine("Line {0}: {1}", lineNumber, line);
+                        line = reader.ReadLine();
+                    }
+                    Console.WriteLine(lineNumber);
+                    Console.WriteLine(Environment.TickCount - start);
+                    string text = reader.ReadToEnd();
 
-                //Console.WriteLine(text);
+                    //Console.WriteLine(text);
+                    Console.WriteLine(Environment.TickCount - start);
+                }
             }
+            catch (FileNotFoundException)
+            {
+                Console.WriteLine("File was not found");
+            }
+            
         }
     }
 }

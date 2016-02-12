@@ -1,34 +1,55 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace MultipleThreads
 {
     class ThreadClass
     {
+        public string ThreadName { get; set; }
+
+        public ThreadClass(string name)
+        {
+            this.ThreadName = name;
+        }
+
         public void DoTask1()
         {
             int start = Environment.TickCount;
-            for (int i = 0; i < 100; i++)
+            var counter = 0;
+            Console.WriteLine("First thread ID is :" + Thread.CurrentThread.ManagedThreadId);
+            for (int i = 0; i < 10000; i++)
             {
-                Console.WriteLine("Thread1:job({0})", i);
-                Thread.Sleep(50);
+                for (int k = 0; k < 10000; k++)
+                {
+                    for (int j = 0; j < 10000; j++)
+                    {
+                        counter++;
+                    }
+                }
+                //Console.WriteLine("Thread1:job({0})", i);
+                //Thread.Sleep(3);
             }
-            Console.WriteLine("Time taken: " + (Environment.TickCount - start));
+            Console.WriteLine("Time taken for first thread: " + (Environment.TickCount - start));
         }
 
         public void DoTask2()
         {
             int start = Environment.TickCount;
-            for (int i = 0; i < 100; i++)
+            var counter = 0;
+            Console.WriteLine("Second thread ID is :" + Thread.CurrentThread.ManagedThreadId);
+            for (int i = 0; i < 10000; i++)
             {
-                Console.WriteLine("Thread2:job({0})", i);
-                Thread.Sleep(50);
+                for (int k = 0; k < 10000; k++)
+                {
+                    for (int j = 0; j < 10000; j++)
+                    {
+                        counter++;
+                    }
+                }
+                //Console.WriteLine("Thread2:job({0})", i);
+                //Thread.Sleep(5);
             }
-            Console.WriteLine("Time taken: " + (Environment.TickCount - start));
+            Console.WriteLine("Time taken for second thread: " + (Environment.TickCount - start));
         }
     }
 }

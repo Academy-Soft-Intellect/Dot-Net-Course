@@ -29,7 +29,7 @@ namespace BinarySearchExample
 
             int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8 };
             int index = BinarySearch(arr, 5);
-
+            Array.BinarySearch(arr, 5);
             Console.WriteLine(index);
         }
 

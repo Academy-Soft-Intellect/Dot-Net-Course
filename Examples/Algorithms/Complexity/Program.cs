@@ -10,7 +10,7 @@ namespace Complexity
     {
         static void Main(string[] args)
         {
-            int n = 5000;
+            int n = 1000;
 
             int[] arr = new int[n];
             Random rand = new Random();
@@ -53,7 +53,7 @@ namespace Complexity
         }
 
         //Квадратична сложност - Този код ще работи добре, ако елементите не са повече от няколко хиляди или десетки хиляди.
-        static  int FindInversions(int[] array)
+        static int FindInversions(int[] array)
         {
             int inversions = 0;
             for (int i = 0; i < array.Length - 1; i++)

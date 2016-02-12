@@ -10,9 +10,12 @@ namespace Substring
     {
         static void Main(string[] args)
         {
-            string name = "Pesho Georgiev Dimitrov";
+            string name = "Pesho Petrov Dimitrov";
 
-            string surname = name.Substring(name.IndexOf(" ") + 1, name.LastIndexOf(" ") - (name.IndexOf(" ") + 1));
+            //string surname = name.Substring(6, 8);
+
+            string surname = name.Substring(name.IndexOf(" ") + 1,
+                name.LastIndexOf(" ") - (name.IndexOf(" ") + 1));
 
             Console.WriteLine(surname +"//");
         }

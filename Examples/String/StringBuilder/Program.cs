@@ -15,7 +15,7 @@ namespace StringBuilderDemo
             StringBuilder a = new StringBuilder();
             //string a = string.Empty;
 
-            for (int i = 0; i < 300000; i++)
+            for (int i = 0; i < 3000000; i++)
             {
                 //a += "MyNameIs";
                 a.Append("MyNameIs");

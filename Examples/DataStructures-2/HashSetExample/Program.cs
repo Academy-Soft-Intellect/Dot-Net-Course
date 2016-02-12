@@ -15,22 +15,30 @@ namespace HashSetExample
 
             Console.WriteLine(string.Join(",", array1));
 
+            var list = array1.ToList();
+
             HashSet<string> hash = new HashSet<string>(array1);
 
+            hash.Add("dog");
             foreach (var item in hash)
             {
                 Console.WriteLine(item);
             }
 
-            string[] array2 = hash.ToArray();
 
-            Console.WriteLine(string.Join(",", array2));
+            string isTrue = 1 == 1 ? "Brao genii" : "Tapak";
 
-            hash.Add("pes");
+            Console.WriteLine(isTrue);
 
-            array2 = hash.ToArray();
+            //string[] array2 = hash.ToArray();
 
-            Console.WriteLine(string.Join(",", array2));
+            //Console.WriteLine(string.Join(",", array2));
+
+            //hash.Add("pes");
+
+            //array2 = hash.ToArray();
+
+            //Console.WriteLine(string.Join(",", array2));
 
         }
     }

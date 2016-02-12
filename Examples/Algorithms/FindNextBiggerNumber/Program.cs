@@ -22,7 +22,6 @@ namespace FindNextBiggerNumber
 
             int index = Array.BinarySearch(arr, m);
 
-
             while (m == arr[index])
             {
                 index++;

@@ -14,7 +14,7 @@ namespace ManipulateString
 
             string name1 = name.Replace("Georgiev", "Ivanov");
 
-            Console.WriteLine(name.ToUpper() + "\\");
+            Console.WriteLine(name.ToUpper() + "//");
 
             Console.WriteLine(name1 + "//");
 
