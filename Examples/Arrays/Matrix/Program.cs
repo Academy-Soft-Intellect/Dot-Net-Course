@@ -10,7 +10,10 @@ namespace Matrix
     {
         static void Main(string[] args)
         {
-            int[,] ourArray = new int[4, 3];
+            int rows = int.Parse(Console.ReadLine());
+            int cols = int.Parse(Console.ReadLine());
+
+            int[,] ourArray = new int[rows, cols];
 
             //Console.WriteLine(ourArray.GetLength(0));
 
@@ -24,19 +27,19 @@ namespace Matrix
             {
                 for (int j = 0; j < ourArray.GetLength(1); j++)
                 {
-                    ourArray[i,j] = int.Parse(Console.ReadLine());
+                    ourArray[i, j] = int.Parse(Console.ReadLine());
                 }
             }
 
 
-            //for (int i = 0; i < ourArray.GetLength(0); i++)
-            //{
-            //    for (int j = 0; j < ourArray.GetLength(1); j++)
-            //    {
-            //        Console.Write(ourArray[i,j] + " ");
-            //    }
-            //    Console.WriteLine();
-            //}
+            for (int i = 0; i < ourArray.GetLength(0); i++)
+            {
+                for (int j = 0; j < ourArray.GetLength(1); j++)
+                {
+                    Console.Write(ourArray[i, j] + " ");
+                }
+                Console.WriteLine();
+            }
 
             foreach (var item in ourArray)
             {

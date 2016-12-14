@@ -10,11 +10,16 @@ namespace ForEach
     {
         static void Main(string[] args)
         {
-            int[] ourSecondArray = { 3451, 232, 3465465, 4 };
+            double[] ourSecondArray = { 3451, 232, 3465465, 4 };
 
             foreach (int number in ourSecondArray)
             {
                 Console.WriteLine(number);
+            }
+
+            foreach (var item in ourSecondArray)
+            {
+                Console.WriteLine(item + 5);
             }
         }
     }

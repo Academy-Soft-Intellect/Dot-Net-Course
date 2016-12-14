@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matrix", "Matrix\Matrix.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayOfArrays", "ArrayOfArrays\ArrayOfArrays.csproj", "{156C7944-518D-4125-9145-4FBBF2413668}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matrix4x4", "Matrix4x4\Matrix4x4.csproj", "{AA3E3FDA-0C7D-4E79-BCC3-634038FF2071}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{156C7944-518D-4125-9145-4FBBF2413668}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{156C7944-518D-4125-9145-4FBBF2413668}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{156C7944-518D-4125-9145-4FBBF2413668}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA3E3FDA-0C7D-4E79-BCC3-634038FF2071}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA3E3FDA-0C7D-4E79-BCC3-634038FF2071}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA3E3FDA-0C7D-4E79-BCC3-634038FF2071}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA3E3FDA-0C7D-4E79-BCC3-634038FF2071}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

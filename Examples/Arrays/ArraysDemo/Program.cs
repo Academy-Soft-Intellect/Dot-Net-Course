@@ -10,7 +10,14 @@ namespace ArraysDemo
     {
         static void Main(string[] args)
         {
-            //int[] ourArray = new int[] { 1, 5, 2, 4, 5, 6 };
+            //int[] ourArray = new int[] { 1, 5, 2, 4, 5, 6, 7 };
+
+            //for (int i = 0; i < ourArray.Length; i++)
+            //{
+            //    Console.WriteLine(ourArray[i]);
+            //}
+
+            //Console.WriteLine(ourArray.Length);
 
             //for (int index = 0; index < ourArray.Length; index++)
             //{
@@ -26,23 +33,28 @@ namespace ArraysDemo
             //int[] ourSecondArray = { 1, 2, 3, 4 };
             //Console.WriteLine(ourSecondArray.Length);
 
-            int[] arr = new int[5];
-            arr[5] = 5;
-            for (int i = 0; i < arr.Length; i++)
+            //Console.WriteLine("Enter array length");
+            //int n = int.Parse(Console.ReadLine());
+            //int[] arr = new int[n];
+
+            //for (int i = 0; i < arr.Length; i++)
+            //{
+            //    Console.WriteLine("Enter a number");
+            //    arr[i] = int.Parse(Console.ReadLine());
+            //}
+
+            //Console.WriteLine("Your arr is");
+            //for (int i = 0; i < arr.Length; i++)
+            //{
+            //    Console.WriteLine(arr[i]);
+            //}
+
+            string[] stringArr = new string[] { "ABV", "BVA", "PVC", "Dograma" };
+
+            for (int i = 0; i < stringArr.Length; i++)
             {
-                Console.WriteLine("Enter a number");
-                arr[i] = int.Parse(Console.ReadLine());
+                Console.WriteLine(stringArr[i]);
             }
-
-            Console.WriteLine(arr[3]);
-
-            for (int i = 0; i < arr.Length; i++)
-            {
-                Console.WriteLine(arr[i]);
-            }
-
-
-
         }
     }
 }
