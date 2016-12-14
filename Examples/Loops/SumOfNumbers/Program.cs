@@ -20,16 +20,16 @@ namespace SumOfNumbers
             } while (number != 0);
             Console.WriteLine(sum);
 
-            //for (; ;)
-            //{
-            //    number = int.Parse(Console.ReadLine());
-            //    sum += number;
-            //    if (number==0)
-            //    {
-            //        break;
-            //    }
-            //}
-            //Console.WriteLine(sum);
+            for (;;)
+            {
+                number = int.Parse(Console.ReadLine());
+                sum += number;
+                if (number == 0)
+                {
+                    break;
+                }
+            }
+            Console.WriteLine(sum);
 
             //while (number!=0)
             //{

@@ -14,8 +14,8 @@ namespace While
             while (a > 0)
             {
                 Console.WriteLine(a); 
-                a--;
             }
+
         }
     }
 }

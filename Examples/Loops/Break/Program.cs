@@ -11,22 +11,22 @@ namespace Break
         static void Main(string[] args)
         {
             //int n = int.Parse(Console.ReadLine());
-            //int k = n;
             int m = int.Parse(Console.ReadLine());
 
-            for (int i = 1; ; i++)
+            for (int i = 1; i < 10; i++)
             {
                 Console.WriteLine(i);
-                if (i==m)
+                if (i == m)
                 {
                     break;
                 }
-                //n = n * k;
             }
 
-            //Math.Pow(m, n); смята m на степен n
+            Console.WriteLine("loop has ended");
 
-            //Console.WriteLine(n);
+            Console.WriteLine(Math.Pow(2, 10));
+
+            //Math.Pow(m, n); смята m на степен n
         }
     }
 }
