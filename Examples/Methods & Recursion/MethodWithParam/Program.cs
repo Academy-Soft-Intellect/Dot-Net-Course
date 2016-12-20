@@ -19,10 +19,11 @@ namespace MethodWithParam
             PrintNumbers(numbers2);
 
 
-            string[] names = new string[] { "1dsa", "2das", "3sadas" };
+            //string[] names = new string[] { "1dsa", "2das", "3sadas" };
 
             //PrintNumbers(names);
-            Console.WriteLine();
+            //Console.WriteLine();
+
             PrintNumbers(numbers, numbers2);
         }
 

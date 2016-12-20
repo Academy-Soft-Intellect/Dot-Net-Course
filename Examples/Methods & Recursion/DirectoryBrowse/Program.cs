@@ -14,7 +14,7 @@ namespace DirectoryBrowse
             Console.WriteLine("Enter which directory you want to browse");
             string dir = Console.ReadLine();
             string root = dir + @":\";
-            browseDirectory(dir);
+            browseDirectory(root);
         }
 
         private static void browseDirectory(string root)

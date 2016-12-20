@@ -16,12 +16,12 @@ namespace BigNumbers
 
             int number2 = 1;
 
-            for (int i = 1; i < 40; i++)
+            for (int i = 1; i < 400; i++)
             {
-                number2 *= i;
+                number *= i;
             }
 
-            Console.WriteLine(number2);
+            Console.WriteLine(number);
         }
     }
 }
