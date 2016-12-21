@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstClass", "MyFirstClass\MyFirstClass.csproj", "{D85CEBF2-63E3-444D-A20C-B50AA825F248}"
 EndProject
@@ -20,6 +20,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstTouchWithClassesAndObjects", "FirstTouchWithClassesAndObjects\FirstTouchWithClassesAndObjects.csproj", "{C460E21D-0CE0-40D9-B9AC-24D85DE39A25}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingANamespace", "UsingANamespace\UsingANamespace.csproj", "{6B11198E-39D1-4099-8A89-2B05372F88DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstClassAndObject", "FirstClassAndObject\FirstClassAndObject.csproj", "{D6ACA6C0-7805-4EE1-BD2B-D0FE8B10D3F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticClassExample", "StaticClassExample\StaticClassExample.csproj", "{8644A5AA-492E-47E8-B02B-59E4F6F61318}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +67,14 @@ Global
 		{6B11198E-39D1-4099-8A89-2B05372F88DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B11198E-39D1-4099-8A89-2B05372F88DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B11198E-39D1-4099-8A89-2B05372F88DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6ACA6C0-7805-4EE1-BD2B-D0FE8B10D3F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6ACA6C0-7805-4EE1-BD2B-D0FE8B10D3F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6ACA6C0-7805-4EE1-BD2B-D0FE8B10D3F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6ACA6C0-7805-4EE1-BD2B-D0FE8B10D3F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8644A5AA-492E-47E8-B02B-59E4F6F61318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8644A5AA-492E-47E8-B02B-59E4F6F61318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8644A5AA-492E-47E8-B02B-59E4F6F61318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8644A5AA-492E-47E8-B02B-59E4F6F61318}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

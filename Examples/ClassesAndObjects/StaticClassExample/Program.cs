@@ -4,17 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Employees
+namespace StaticClassExample
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Policeman polizei = new Policeman(8, 1000, "Captain");
-            polizei.PrintInfo();
+            int a = MyStaticClass.MyProperty;
 
-            Doctor doctor = new Doctor(8, 800, 10);
-            doctor.PrintDoctorInfo();
+            Console.WriteLine(a);
+
+            MyStaticClass.Print();
         }
     }
 }

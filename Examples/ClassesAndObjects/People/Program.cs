@@ -17,7 +17,10 @@ namespace People
             ben.Email = "ben@benjamin.com";
             ben.PrintInfo();
 
-            Person john = new Person("Johnathan", 22, "john@hohnathan.com");
+            Person john = new Person();
+            john.Name = "Johnathan";
+            john.Age = 22;
+            john.Email = "john@hohnathan.com";
             john.PrintInfo();
 
             Person jack = new Person();

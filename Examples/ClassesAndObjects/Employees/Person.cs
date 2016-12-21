@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Employees
 {
-    public class Employee : Person
+    public class Person
     {
-        public int HoursPerMonth { get; set; }
-
-        public double Salary { get; set; }
+        public string Name { get; set; }
     }
 }

@@ -6,26 +6,20 @@ using System.Threading.Tasks;
 
 namespace Employees
 {
-    class Policeman : Employee
+    public class Policeman : Employee
     {
-        private string rang;
+        public string Rank { get; set; }
 
-        public string Rang
+        public Policeman(int hours, int salaray, string rank) : base()
         {
-            get { return rang; }
-            set { rang = value; }
+            this.HoursPerMonth = hours;
+            this.Salary = salaray;
+            this.Rank = rank;
         }
 
-        public Policeman(int workingHours, int payment, string rang)
-            : base(workingHours, payment)
+        public void PrintInfo()
         {
-            this.rang = rang;
+            Console.WriteLine("Hours: {0}, Salary: {1}, Rank: {2}", this.HoursPerMonth, this.Salary, this.Rank);
         }
-
-        public void PrintPolicemanInfo()
-        {
-            Console.WriteLine("{0} {1} {2}",WorkingHours, Payment, rang);
-        }
-
     }
 }

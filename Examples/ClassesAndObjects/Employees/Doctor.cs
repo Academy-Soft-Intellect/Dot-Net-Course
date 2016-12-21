@@ -8,22 +8,18 @@ namespace Employees
 {
     class Doctor : Employee
     {
-        private int nightShifts;
-        public int NightShifts
-        {
-            get { return nightShifts; }
-            set { nightShifts = value; }
-        }
+        public int NightShifts { get; set; }
 
-        public Doctor(int workingHours, int payment, int nightShifts)
-            : base(workingHours, payment)
+        public Doctor(int hours, int salaray, int shifts) : base()
         {
-            this.nightShifts = nightShifts;
+            this.HoursPerMonth = hours;
+            this.Salary = salaray;
+            this.NightShifts = shifts;
         }
 
         public void PrintDoctorInfo()
         {
-            Console.WriteLine("{0} {1} {2}", WorkingHours, Payment, nightShifts);
+            Console.WriteLine("{0} {1} {2}", this.HoursPerMonth, this.Salary, this.NightShifts);
         }
 
     }
