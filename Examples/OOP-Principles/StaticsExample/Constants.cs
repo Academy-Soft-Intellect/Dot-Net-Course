@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace StaticsExample
 {
-    class Constants
+    static class Constants
     {
         public static string myString = ConfigurationSettings.AppSettings["myString"];
     }

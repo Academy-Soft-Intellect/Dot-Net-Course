@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ADogIsAnAnimal;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,7 @@ namespace Inheritance
             //Cat cat = new Cat();
             //cat.Male = true;
             //cat.Name = "Roki";
-            
+
             //Console.WriteLine(cat.Male);
             //Console.WriteLine(cat.Name);
 
