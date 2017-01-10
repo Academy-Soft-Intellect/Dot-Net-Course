@@ -16,5 +16,10 @@ namespace ListExample
         {
             return this.Name == other.Name && this.Age == other.Age;
         }
+
+        public override string ToString()
+        {
+            return string.Format("{0} is {1} years old", this.Name, this.Age);
+        }
     }
 }

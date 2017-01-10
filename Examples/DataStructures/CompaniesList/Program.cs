@@ -30,6 +30,13 @@ namespace CompaniesList
                 NumberOfEmployees = 15
             });
 
+            foreach (var item in companiesList)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.WriteLine("------------------------------------------------");
+
             int maxEmployess = companiesList[0].NumberOfEmployees;
             Company temp = companiesList[0];
             foreach (var item in companiesList)
@@ -43,6 +50,13 @@ namespace CompaniesList
 
             companiesList.Remove(temp);
 
+            foreach (var item in companiesList)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.WriteLine("------------------------------------------------");
+
             companiesList.Add(new Company
             {
                 Name = "Fourth Company with longest name",
@@ -54,6 +68,13 @@ namespace CompaniesList
                 Name = "Fifth Company",
                 NumberOfEmployees = 25
             });
+
+            foreach (var item in companiesList)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.WriteLine("------------------------------------------------");
 
             string longestName = companiesList[0].Name;
             temp = companiesList[0];

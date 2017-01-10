@@ -26,19 +26,19 @@ namespace HashSetExample
             }
 
 
-            string isTrue = 1 == 1 ? "Brao genii" : "Tapak";
+            string isTrue = 1 == 2 ? "Brao genii" : "Tapak";
 
-            Console.WriteLine(isTrue);
+            //Console.WriteLine(isTrue);
 
-            //string[] array2 = hash.ToArray();
+            string[] array2 = hash.ToArray();
 
-            //Console.WriteLine(string.Join(",", array2));
+            Console.WriteLine(string.Join(",", array2));
 
-            //hash.Add("pes");
+            hash.Add("pes");
 
-            //array2 = hash.ToArray();
+            array2 = hash.ToArray();
 
-            //Console.WriteLine(string.Join(",", array2));
+            Console.WriteLine(string.Join(",", array2));
 
         }
     }

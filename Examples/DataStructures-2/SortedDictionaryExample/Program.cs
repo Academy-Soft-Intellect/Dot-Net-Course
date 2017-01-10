@@ -14,14 +14,18 @@ namespace SortedDictionaryExample
 
             dict.Add(3, "Three");
             dict.Add(2, "One");
-            dict.Add(4, "One");
+            dict.Add(5, "One");
             dict.Add(1, "Two");
 
+            //foreach (var item in dict)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            dict.Add(4, "Four");
             foreach (var item in dict)
             {
                 Console.WriteLine(item);
             }
-
         }
     }
 }

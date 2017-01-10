@@ -12,7 +12,7 @@ namespace HashSetIntersecAndUnion
         {
             int[] array1 = new int[] { 1, 2, 3, 4, 5, 6, 7 };
 
-            int[] array2 = new int[] { 4, 5, 6, 7, 8, 9, 10 };
+            int[] array2 = new int[] { 4, 5, 7, 6, 8, 9, 10 };
 
             int[] array3 = new int[] { 6, 7, 8, 9, 10 };
 
@@ -21,7 +21,7 @@ namespace HashSetIntersecAndUnion
             HashSet<int> hash2 = new HashSet<int>(array2);
             HashSet<int> hash3 = new HashSet<int>(array3);
 
-            //int[] intersectResult = hash1.Intersect(hash2).Intersect(hash3).ToArray();
+            //int[] intersectResult = hash1.Intersect(hash2).ToArray();
 
             //foreach (var item in intersectResult)
             //{

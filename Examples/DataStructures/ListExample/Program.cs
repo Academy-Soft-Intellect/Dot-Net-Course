@@ -19,6 +19,13 @@ namespace ListExample
             //}
             //Console.WriteLine(numbers.Capacity);
             //Console.WriteLine(numbers.Count);
+
+            //var evenNumbers = numbers.Where(number => number % 2 == 0);
+            //foreach (var item in evenNumbers)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
             //numbers.Add(45);
 
             //numbers.Add(12);
@@ -31,44 +38,31 @@ namespace ListExample
             //Console.WriteLine(numbers.Count);
 
             List<Student> students = new List<Student>();
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 15; i++)
             {
-                var current = new Student();
-                current.Name = Console.ReadLine();
-                current.Age = int.Parse(Console.ReadLine());
-                students.Add(current);
+                //var current = new Student();
+                //current.Name = Console.ReadLine();
+                //current.Age = int.Parse(Console.ReadLine());
+                //students.Add(current);
 
-                //students.Add(new Student()
-                //{
-                //    Name = string.Format("Student " + i),
-                //    Age = i
-                //});
+                students.Add(new Student()
+                {
+                    Name = string.Format("Student " + i),
+                    Age = i
+                });
             }
-            var st = new Student()
-            {
-                Name = "Student 4",
-                Age = 4
-            };
 
-            int maxEmpployees = 0;
-            int indexToDelete = 0;
+            students.RemoveAt(5);
+
+            students.Insert(8, new Student() { Name = "Newly inserted student", Age = 26 });
+
+            var studentToRemove = students[6];
+
+            students.Remove(studentToRemove);
 
             foreach (var item in students)
             {
-                if (item.Age > maxEmpployees)
-                {
-                    maxEmpployees = item.Age;
-                    indexToDelete = students.IndexOf(item);
-                }
-            }
-            students.RemoveAt(indexToDelete);
-
-            students.RemoveAt(5);
-            Console.WriteLine(students.IndexOf(st));
-            students.Remove(st);
-            foreach (var student in students)
-            {
-                Console.WriteLine(string.Format("{0} is {1} years old", student.Name, student.Age));
+                Console.WriteLine(item);
             }
 
         }

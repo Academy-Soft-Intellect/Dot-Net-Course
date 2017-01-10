@@ -17,8 +17,15 @@ namespace DictionaryExample
             dict.Add(1, "One");
             dict.Add(4, "Four");
             dict.Add(2, "Two");
+
             dict[5] = "Five";
-            dict[5] = "ssss";
+            //dict.Add(5, "sdadsa");
+            //dict[5] = "ssss";
+
+            //foreach (var item in dict)
+            //{
+            //    Console.WriteLine(item.Value);
+            //}
 
 
             //for (int i = 0; i < 8; i++)
@@ -26,13 +33,13 @@ namespace DictionaryExample
             //    dict.Add(6 + i, "a");
             //}
 
-            string test;
+            //string test;
 
-            if (dict.TryGetValue(7, out test))
-            {
-                Console.WriteLine(test);
-                Console.WriteLine("Success");
-            }
+            //if (dict.TryGetValue(5, out test))
+            //{
+            //    Console.WriteLine(test);
+            //    Console.WriteLine("Success");
+            //}
 
             foreach (var item in dict)
             {
