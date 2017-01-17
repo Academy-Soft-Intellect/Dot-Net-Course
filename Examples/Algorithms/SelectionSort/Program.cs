@@ -10,7 +10,7 @@ namespace SelectionSort
     {
         static void Main(string[] args)
         {
-            int n = 500;
+            int n = 20;
 
             int[] array = new int[n];
             Random rand = new Random();

@@ -10,7 +10,7 @@ namespace CompareSortingAlgorithms
     {
         static void Main(string[] args)
         {
-            int n = 10000000;
+            int n = 100000;
 
             int[] arr = new int[n];
             Random rand = new Random();
@@ -28,7 +28,7 @@ namespace CompareSortingAlgorithms
             Console.WriteLine("Quick sort in miliseconds: " + (Environment.TickCount - startQuickSort));
 
             int startSelectionSort = Environment.TickCount;
-            //SelectionSort(arr);
+            SelectionSort(arr);
             Console.WriteLine("Selection sort in miliseconds: " + (Environment.TickCount - startSelectionSort));
 
         }

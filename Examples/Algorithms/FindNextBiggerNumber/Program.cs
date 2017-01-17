@@ -10,8 +10,7 @@ namespace FindNextBiggerNumber
     {
         static void Main(string[] args)
         {
-            int n = 10;
-            int[] arr = new int[] { 2, 4, 7, 2, 9, 6, 10, 8, 2, 12 };
+            int[] arr = new int[] { 2, 4, 7, 4, 9, 6, 10, 8, 2, 12 };
 
             //for (int i = 0; i < arr.Length; i++)
             //{
@@ -19,6 +18,8 @@ namespace FindNextBiggerNumber
             //}
 
             int m = int.Parse(Console.ReadLine());
+
+            Array.Sort(arr);
 
             int index = Array.BinarySearch(arr, m);
 

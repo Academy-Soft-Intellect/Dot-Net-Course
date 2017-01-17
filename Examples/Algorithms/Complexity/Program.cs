@@ -10,7 +10,7 @@ namespace Complexity
     {
         static void Main(string[] args)
         {
-            int n = 1000;
+            int n = 10;
 
             int[] arr = new int[n];
             Random rand = new Random();
