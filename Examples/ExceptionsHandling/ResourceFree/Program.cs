@@ -11,20 +11,19 @@ namespace ResourceFree
     {
         static void Main(string[] args)
         {
-            StreamWriter reader = new StreamWriter("");
+            StreamWriter reader = new StreamWriter("test.txt");
             try
             {
+                int a = int.Parse("sdad");
             }
             catch (Exception)
             {
-
-                throw;
             }
             finally
             {
                 reader.Close();
             }
-
+            Console.WriteLine();
         }
     }
 }

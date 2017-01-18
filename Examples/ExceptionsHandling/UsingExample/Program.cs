@@ -12,14 +12,14 @@ namespace UsingExample
         static void Main(string[] args)
         {
             string path = "test.txt";
-            using (StreamWriter reader = new StreamWriter(path))
+            using (StreamWriter reader = new StreamWriter(path,true))
             {
-                using (StreamWriter reader2 = new StreamWriter(path))
-                {
-                    reader2.WriteLine("Test");
+                reader.WriteLine("Test1");
+            }
 
-                }
-                
+            using (StreamWriter reader2 = new StreamWriter(path, true))
+            {
+                reader2.WriteLine("Test2");
             }
         }
     }

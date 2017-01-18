@@ -21,7 +21,7 @@ namespace CreateYourOwnExceptions
         /// Create the exception with description
         /// </summary>
         /// <param name="message">Exception description</param>
-        public NegativeNumberException(String message)
+        public NegativeNumberException(string message)
             : base(message)
         {
         }
@@ -31,7 +31,7 @@ namespace CreateYourOwnExceptions
         /// </summary>
         /// <param name="message">Exception description</param>
         /// <param name="innerException">Exception inner cause</param>
-        public NegativeNumberException(String message, Exception innerException)
+        public NegativeNumberException(string message, Exception innerException)
             : base(message, innerException)
         {
         }

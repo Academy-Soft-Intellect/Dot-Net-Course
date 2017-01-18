@@ -16,7 +16,7 @@ namespace ThreadPollExample
 
             Console.WriteLine("Started: {0}.", aParam);
             Thread.Sleep(500);
-            //Console.WriteLine(Thread.CurrentThread.ManagedThreadId);
+            Console.WriteLine("Thread number in the poll: {0}", Thread.CurrentThread.ManagedThreadId);
             Console.WriteLine("Finished: {0}.", aParam);
         }
 
@@ -27,7 +27,7 @@ namespace ThreadPollExample
             for (int i = 1; i <= TASKS_COUNT; i++)
             {
                 string taskName = "Task " + i;
-                //ThreadPool.SetMinThreads(8, 8);
+                ThreadPool.SetMinThreads(8, 8);
                 ThreadPool.QueueUserWorkItem(new
                    WaitCallback(LongTask), taskName);
             }

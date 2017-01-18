@@ -16,6 +16,7 @@ namespace SuspendAndResume
         private static void Main()
         {
             mThread = new Thread(new ThreadStart(PrintMessages));
+            Console.WriteLine(mThread.ThreadState);
             mThread.Start();
             for (int i = 0; i < 10; i++)
             {
@@ -25,8 +26,9 @@ namespace SuspendAndResume
                 Console.WriteLine();
                 SpendSomeTime();
                 mThread.Resume();
+                //mThread.Join();
             }
-            mThread.Suspend();
+            mThread.Abort();
         }
 
         private static void SpendSomeTime()

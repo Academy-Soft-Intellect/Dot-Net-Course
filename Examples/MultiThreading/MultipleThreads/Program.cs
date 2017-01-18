@@ -10,8 +10,8 @@ namespace MultipleThreads
 
             int start = Environment.TickCount;
 
-            ThreadClass threadClass = new ThreadClass("Thread 1");
-            Console.WriteLine("Main thread ID is :"+ Thread.CurrentThread.ManagedThreadId);
+            //ThreadClass threadClass = new ThreadClass("Thread 2");
+            ////Console.WriteLine("Main thread ID is :"+ Thread.CurrentThread.ManagedThreadId);
             //threadClass.DoTask1();
             //threadClass.DoTask2();
 
@@ -20,7 +20,7 @@ namespace MultipleThreads
                new ThreadStart(new ThreadClass("ONE").DoTask1));
 
             Thread thread2 = new Thread(
-               new ThreadStart(threadClass.DoTask2));
+               new ThreadStart(new ThreadClass("TWO").DoTask2));
 
             thread2.Priority = ThreadPriority.Highest;
             thread1.Priority = ThreadPriority.Lowest;

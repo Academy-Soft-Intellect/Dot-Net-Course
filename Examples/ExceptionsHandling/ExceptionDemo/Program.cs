@@ -13,10 +13,14 @@ namespace ExceptionDemo
         {
             try
             {
-
                 int a = int.Parse(Console.ReadLine());
             }
             catch (FormatException error)
+            {
+                Console.WriteLine(error.Message);
+                Console.WriteLine("More specific exception handled");
+            }
+            catch (Exception error)
             {
                 Console.WriteLine(error.Message);
                 Console.WriteLine("You have to write a number");

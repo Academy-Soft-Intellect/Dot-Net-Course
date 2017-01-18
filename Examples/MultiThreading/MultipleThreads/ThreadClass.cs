@@ -16,8 +16,8 @@ namespace MultipleThreads
         {
             int start = Environment.TickCount;
             var counter = 0;
-            Console.WriteLine("First thread ID is :" + Thread.CurrentThread.ManagedThreadId);
-            for (int i = 0; i < 10000; i++)
+            //Console.WriteLine("First thread ID is :" + Thread.CurrentThread.ManagedThreadId);
+            for (int i = 0; i < 10; i++)
             {
                 for (int k = 0; k < 10000; k++)
                 {
@@ -26,7 +26,7 @@ namespace MultipleThreads
                         counter++;
                     }
                 }
-                //Console.WriteLine("Thread1:job({0})", i);
+                Console.WriteLine("Thread1:job({0})", i);
                 //Thread.Sleep(3);
             }
             Console.WriteLine("Time taken for first thread: " + (Environment.TickCount - start));
@@ -36,8 +36,8 @@ namespace MultipleThreads
         {
             int start = Environment.TickCount;
             var counter = 0;
-            Console.WriteLine("Second thread ID is :" + Thread.CurrentThread.ManagedThreadId);
-            for (int i = 0; i < 10000; i++)
+            //Console.WriteLine("Second thread ID is :" + Thread.CurrentThread.ManagedThreadId);
+            for (int i = 0; i < 10; i++)
             {
                 for (int k = 0; k < 10000; k++)
                 {
@@ -46,10 +46,18 @@ namespace MultipleThreads
                         counter++;
                     }
                 }
-                //Console.WriteLine("Thread2:job({0})", i);
-                //Thread.Sleep(5);
+                Console.WriteLine("Thread2:job({0})", i);
+                Thread.Sleep(500);
             }
             Console.WriteLine("Time taken for second thread: " + (Environment.TickCount - start));
+        }
+
+        public void DoTask3()
+        {
+            for (int i = 0; i < 50; i++)
+            {
+                Console.WriteLine("{0}:{1}", this.ThreadName, i);
+            }
         }
     }
 }

@@ -25,7 +25,15 @@ namespace SuspendResumeForm
 
         private void button1_Click(object sender, EventArgs e)
         {
-            mThread.Start();
+            try
+            {
+                mThread.Start();
+
+            }
+            catch (Exception)
+            {
+                textBox1.Text += "Тъпак вече бачка";
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -48,7 +56,6 @@ namespace SuspendResumeForm
                     Thread.Sleep(50);
                 }
             }
-            
         }
 
     }

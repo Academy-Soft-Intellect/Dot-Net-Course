@@ -22,11 +22,11 @@ namespace JoinThreads
             Thread thread2 = new Thread(
                new ThreadStart(threadClass.DoTask2));
 
-            thread2.Priority = ThreadPriority.Highest;
-            thread1.Priority = ThreadPriority.Lowest;
+            //thread2.Priority = ThreadPriority.Highest;
+            //thread1.Priority = ThreadPriority.Lowest;
             thread2.Start();
             thread1.Start();
-            //thread2.Join();
+            thread2.Join();
             //Thread.Sleep(500);
             Console.WriteLine("Main thread finished.");
         }
