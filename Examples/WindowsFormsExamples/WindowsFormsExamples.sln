@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OurFirstWindowsForm", "OurFirstWindowsForm\OurFirstWindowsForm.csproj", "{4C71347C-E0A6-4ADC-999A-D27397D791BB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OurFirstForm", "OurFirstForm\OurFirstForm.csproj", "{47D6FB16-6761-44FD-BDC3-21AFCC44FAB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication1", "WindowsFormsApplication1\WindowsFormsApplication1.csproj", "{BF4F5472-8ECF-4AD9-9885-03C9B324A775}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtherCommonUsedControls", "OtherCommonUsedControls\OtherCommonUsedControls.csproj", "{501B4129-0987-4BE4-89F8-6A4629A00087}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{47D6FB16-6761-44FD-BDC3-21AFCC44FAB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47D6FB16-6761-44FD-BDC3-21AFCC44FAB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47D6FB16-6761-44FD-BDC3-21AFCC44FAB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF4F5472-8ECF-4AD9-9885-03C9B324A775}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF4F5472-8ECF-4AD9-9885-03C9B324A775}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF4F5472-8ECF-4AD9-9885-03C9B324A775}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF4F5472-8ECF-4AD9-9885-03C9B324A775}.Release|Any CPU.Build.0 = Release|Any CPU
+		{501B4129-0987-4BE4-89F8-6A4629A00087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{501B4129-0987-4BE4-89F8-6A4629A00087}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{501B4129-0987-4BE4-89F8-6A4629A00087}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{501B4129-0987-4BE4-89F8-6A4629A00087}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
