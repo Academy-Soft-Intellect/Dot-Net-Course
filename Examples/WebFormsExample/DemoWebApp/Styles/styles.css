@@ -1,0 +1,15 @@
+﻿body {
+    background-color: black;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+#linkBtn:hover{
+    background-color: red;
+}
+
+.nav-menu-button:hover{
+    background-color: lime;
+}
