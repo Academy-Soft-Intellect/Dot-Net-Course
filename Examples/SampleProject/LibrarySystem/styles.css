@@ -1,0 +1,45 @@
+﻿body {
+}
+
+.menu {
+    margin-bottom: 80px;
+    background-color: aqua;
+    height: 50px;
+    line-height: 50px;
+}
+
+.menu-item {
+    margin-left: 100px;
+}
+
+    .menu-item > a:visited {
+        color: red;
+    }
+
+.container {
+    padding-left: 100px;
+}
+
+.repeater-item {
+    margin-bottom: 30px;
+    float: left;
+    margin-right: 70px;
+    border: 2px dotted blue;
+    padding: 20px;
+}
+
+.item-row {
+    display: block;
+}
+
+.add-book-line {
+    margin-top: 20px;
+}
+
+#searchButton, #addBookButton {
+    margin-top: 30px;
+}
+
+#searchButton {
+    margin-bottom: 20px;
+}
